@@ -10,7 +10,7 @@ import BlogListing from "../components/PostListing/PostListing";
 import WorkIcon from "../../static/SVG/Work.svg";
 import BlogIcon from "../../static/SVG/Blog.svg";
 import Now from "../components/Now/Now";
-import { ReadOn, CTAButton } from "../components/UI";
+import { ReadOn, CTAButton } from "../components/elements";
 
 const Row = styled.section`
   padding: var(--var-padding-l) 0;
@@ -38,6 +38,11 @@ const BoxContent = styled.div`
 `;
 
 const Intro = styled(Row)`
+  justify-content: center;
+  text-align: center;
+`;
+
+const CenterRow = styled.section`
   justify-content: center;
   text-align: center;
 `;
@@ -90,18 +95,6 @@ const IntroBox = styled.div`
   padding: 0 0 2rem 0;
   max-width: 400px;
 `;
-const More2Button = styled.button`
-  box-sizing: border-box;
-  background: none;
-  padding: 1rem 2rem;
-  border: 0;
-  margin: 0 auto;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background: var(--color-brand-500);
-    color: var(--color-black-500);
-  }
-`;
 
 const FullGreyRow = styled(Row)`
   background: var(--color-white-300);
@@ -130,10 +123,6 @@ const AboutBox = styled.div`
 
 const AboutIntro = styled.div``;
 
-const AboutIcon = styled.div`
-  justify-self: flex-end;
-`;
-
 const HalfBox = styled.div`
   width: 55ch;
 
@@ -146,13 +135,6 @@ const Subtitle = styled.p`
   font-size: 1.125rem;
   font-family: var(--font-secondary);
   font-weight: 500;
-`;
-
-const Center = styled.div`
-  display: flex;
-  width: 100%;
-  align-items: center;
-  text-align: center;
 `;
 
 const Blog = styled.section`
@@ -183,15 +165,6 @@ const Blog = styled.section`
     border-radius: 10px;
     width: 10px;
   }
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 10%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  z-index: 1000;
 `;
 
 const BlogIntro = styled.div`
@@ -312,8 +285,7 @@ class Index extends React.Component {
                 Designer. Before that, I worked as Cross-Content Intern at
                 iTunes & App Store, Apple.
               </p>
-              <Link to="/about">About Me →</Link>{" "}
-              <ReadOn text="About Me" href="/about" />
+              <Link to="/about">About Me →</Link>
             </HalfBox>
           </Row>
           <FullGreyRow className="full-bleed">
@@ -329,7 +301,9 @@ class Index extends React.Component {
                 </AboutIntro>
               </AboutBox>
               <WorkHero postEdges={workEdges} />
-              <CTAButton invert href="/work" text="View More" />
+              <CenterRow>
+                <CTAButton invert href="/work" text="View More" />
+              </CenterRow>
             </BoxContent>
           </FullGreyRow>
           <Row>

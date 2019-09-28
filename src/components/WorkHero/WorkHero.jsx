@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
-import { ReadOn } from "../UI";
+import { ReadOn } from "../elements";
 
 const Grid = styled.section``;
 
