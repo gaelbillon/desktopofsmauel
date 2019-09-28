@@ -6,12 +6,11 @@ import Link from "../components/GatsbyLink/GatsbyLink";
 import config from "../../data/SiteConfig";
 import Layout from "../layout";
 import WorkHero from "../components/WorkHero/WorkHero";
-import CTAButton from "../components/MajorButton/MajorButton";
 import BlogListing from "../components/PostListing/PostListing";
 import WorkIcon from "../../static/SVG/Work.svg";
 import BlogIcon from "../../static/SVG/Blog.svg";
 import Now from "../components/Now/Now";
-import { ReadOn } from "../components/UI";
+import { ReadOn, CTAButton } from "../components/UI";
 
 const Row = styled.section`
   padding: var(--var-padding-l) 0;
@@ -330,13 +329,7 @@ class Index extends React.Component {
                 </AboutIntro>
               </AboutBox>
               <WorkHero postEdges={workEdges} />
-              <Center>
-                <ContactButton>
-                  <Link to="/work" className="noeffect">
-                    View More →
-                  </Link>
-                </ContactButton>
-              </Center>
+              <CTAButton invert href="/work" text="View More" />
             </BoxContent>
           </FullGreyRow>
           <Row>

@@ -4,7 +4,9 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Wrapper = styled.button`
-  border: 1px solid var(--color-brand-500);
+  border: ${props =>
+    props.invert ? `none` : `1px solid var(--color-brand-500)`};
+
   box-sizing: border-box;
   background: none;
   padding: 1rem 2rem;
@@ -19,16 +21,26 @@ const Text = styled.small`
   text-decoration: none;
   margin-bottom: 0;
 `;
-class MajorButton extends React.Component {
+class CTAButton extends React.Component {
   render() {
     const props = this.props;
+    const { invert } = this.props;
     return (
       <Link to={props.href} class="noeffect">
-        <Wrapper>
+        <Wrapper invert={invert}>
           <Text>{props.text}</Text>
         </Wrapper>
       </Link>
     );
   }
 }
-export default MajorButton;
+export default CTAButton;
+
+CTAButton.propTypes = {
+  invert: PropTypes.bool
+};
+
+CTAButton.defaultProps = {
+  invert: false,
+  text: "Read On →"
+};

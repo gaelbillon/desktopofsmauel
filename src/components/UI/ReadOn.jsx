@@ -7,9 +7,10 @@ const Button = styled(Link)`
   margin: 0;
   background: none;
   border: none;
-  text-transform: uppercase;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.075em;
+  text-transform: uppercase;
   cursor: pointer;
   display: inline;
   border-bottom: none;
