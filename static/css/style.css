@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/** Typography **/
+/* Font Family */
+/* Base sizes */
+:root {
+  font-family: Merriweather, freight-big-pro, Georgia, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: canada-type-gibson, IBM Plex Sans Helvetica, Arial, “system-ui”, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+small {
+  font-family: canada-type-gibson, IBM Plex Sans Helvetica, Arial, “system-ui”, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

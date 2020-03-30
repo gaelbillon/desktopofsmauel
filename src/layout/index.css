@@ -1,11 +1,7 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://use.typekit.net/hey8lez.css");
 
-/** Typography **/
 :root {
-  --font-primary: canada-type-gibson, IBM Plex Sans Helvetica, Arial, sans-serif;
-  --font-secondary: Merriweather, freight-big-pro, Georgia, serif;
-  --tertiary-font: grad, Georgia, serif;
   --font-weight-bold: 600;
   --font-weight-regular: 400;
   --color-brand-300: #fefdf4;
@@ -87,7 +83,6 @@ div > main {
 }
 
 h1 {
-  font-family: var(--font-secondary);
   font-style: normal;
   font-weight: var(--font-weight-bold);
   font-size: calc(36px + (56 - 36) * ((100vw - 320px) / (1600 - 320)));
@@ -98,8 +93,7 @@ h1 {
 
 h2 {
   font-size: calc(26px + (40 - 26) * ((100vw - 320px) / (1600 - 320)));
-  font-family: var(--font-weight-bold);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   line-height: calc(32px + (48 - 32) * ((100vw - 320px) / (1600 - 320)));
 }
 
@@ -108,7 +102,6 @@ h2 {
 }
 
 h3 {
-  font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
   line-height: 150%;
   font-size: calc(24px + (30 - 24) * ((100vw - 320px) / (1600 - 320)));
@@ -119,7 +112,6 @@ h3 {
 }
 
 h4 {
-  font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   line-height: 130%;
@@ -129,7 +121,6 @@ h4 {
 }
 
 h5 {
-  font-family: var(--font-secondary);
   font-style: normal;
   font-weight: var(--font-weight-regular);
   line-height: 150%;
@@ -139,7 +130,6 @@ h5 {
 }
 
 h6 {
-  font-family: var(--font-secondary);
   font-weight: var(--font-weight-regular);
   text-transform: uppercase;
   line-height: normal;
