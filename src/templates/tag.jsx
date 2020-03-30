@@ -8,7 +8,10 @@ import styled from "styled-components";
 import PageTitle from "elements/PageTitle";
 import Boxed from "elements/Boxed";
 
-const Grid = styled.section``;
+const Grid = styled.section`
+  max-width: 768px;
+  margin: 0 auto;
+`;
 
 const Container = styled.section`
   @media only screen and (max-width: 1280px) {
@@ -27,14 +30,12 @@ export default class TagTemplate extends React.Component {
     return (
       <Layout>
         <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitleAlt}`} />
-        <Boxed>
-          <Hero>
-            <PageTitle title={`Discover Post in ${tag}`} />
-          </Hero>
-          <Container>
-            <PostList postEdges={postEdges} />
-          </Container>
-        </Boxed>
+        <Hero>
+          <PageTitle title={`Discover Post in ${tag}`} />
+        </Hero>
+        <Container>
+          <PostList postEdges={postEdges} />
+        </Container>
       </Layout>
     );
   }
