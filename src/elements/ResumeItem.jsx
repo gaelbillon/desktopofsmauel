@@ -7,7 +7,7 @@ const Block = styled.div`
   padding-top: 1rem;
 `;
 
-const Title = styled.p`
+const Title = styled.h3`
   font-size: 1.5rem;
   color: var(--color-white-500);
   margin-bottom: 0;
@@ -17,10 +17,9 @@ const Content = styled.p`
   color: var(--color-secondary-100);
 `;
 
-const Meta = styled.p`
+const Meta = styled.h5`
   color: var(--color-secondary-100);
   opacity: 0.5;
-  font-family: var(--font-primary);
   letter-spacing: 0.025rem;
 `;
 

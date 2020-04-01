@@ -37,18 +37,6 @@ const ListLeft = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-
-  small {
-    font-family: var(--font-secondary);
-  }
-`;
-const ReadButton = styled(Link)`
-  justify-self: flex-end;
-  border-bottom: 0;
-
-  h5 {
-    font-family: var(--font-secondary);
-  }
 `;
 
 const ListRight = styled.div``;

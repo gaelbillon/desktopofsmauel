@@ -10,7 +10,6 @@ const Section = styled.section`
 `;
 
 const Title = styled.h3`
-  font-family: var(--font-primary);
   color: var(--color-secondary-100);
   letter-spacing: 0;
 `;

@@ -6,8 +6,6 @@ const PageTitleWrapper = styled.div`
 `;
 
 const Subtitle = styled.h2`
-  font-family: var(--font-secondary);
-  font-weight: 400;
   text-transform: uppercase;
   line-height: normal;
   font-size: 12px;
@@ -17,7 +15,6 @@ const Subtitle = styled.h2`
 `;
 
 const Title = styled.h1`
-  font-family: var(--font-primary);
   font-size: var(--font-size-xxl);
   margin-bottom: 4rem;
 `;

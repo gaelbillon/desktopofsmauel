@@ -30,10 +30,6 @@ const Intro = styled(Row)`
 
 const Hero = styled.div`
   text-align: left;
-
-  h1 {
-    font-family: var(--font-primary);
-  }
 `;
 
 const HeroGraphics = styled.figure`

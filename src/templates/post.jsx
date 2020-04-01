@@ -97,7 +97,7 @@ const Sidebar = styled.aside`
 
 const PostTitle = styled.h1`
   grid-area: title;
-  font-family: var(--font-primary);
+  
 `;
 const PostMeta = styled.small`
   margin: 0;

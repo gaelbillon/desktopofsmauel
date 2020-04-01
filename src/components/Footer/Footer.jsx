@@ -35,6 +35,7 @@ const FooterItem = styled(Link)`
   color: var(--color-secondary-500);
   border-bottom: 0;
   text-align: center;
+  font-family: $font-secondary;
   &:last-child {
     margin-right: 0;
   }
@@ -43,7 +44,7 @@ const FooterItem = styled(Link)`
     margin: 0;
     font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1600 - 320)));
     line-height: calc(32px + (40 - 32) * ((100vw - 320px) / (1600 - 320)));
-    font-family: var(--font-secondary);
+   
     text-align: center;
 
     @media only screen and (max-width: 768px) {
