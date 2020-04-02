@@ -38,7 +38,6 @@ const GridItem = styled.div`
 `;
 
 const GridHeading = styled.h3`
-  font-weight: 800;
   font-size: var(--font-size-l);
 `;
 
@@ -55,7 +54,6 @@ const GridPhoto = styled(Img)`
 
 const GridTitle = styled.h2`
   font-size: var(--font-size-l);
-  font-weight: 800;
   line-height: 120%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -81,7 +79,6 @@ const GridExcerpt = styled.p`
 `;
 
 const GridButton = styled.button`
-  font-family: var(--font-secondary);
   box-shadow: none;
   font-weight: 400;
   border: 0;

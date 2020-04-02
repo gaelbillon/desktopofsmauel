@@ -24,3 +24,10 @@ small {
   font-family: $font-primary;
   font-weight: $font-weight-regular;
 }
+
+button {
+  font-family: $font-primary;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem; /* Fix later */
+}

@@ -177,16 +177,6 @@ a > button {
   border-bottom: none;
 }
 
-button {
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-regular);
-  text-transform: uppercase;
-  line-height: normal;
-  font-size: 12px;
-  letter-spacing: 0.075rem;
-  cursor: pointer;
-}
-
 a.linkicon {
   color: var(--color-secondary-500);
   transition: color 0.3s ease-in-out;

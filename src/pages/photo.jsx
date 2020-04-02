@@ -33,7 +33,6 @@ const Grid = styled.section``;
 const Main = styled.div``;
 
 const Title = styled(PageTitle)`
-  font-family: var(--font-primary);
   margin-bottom: 0;
 `;
 

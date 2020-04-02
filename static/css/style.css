@@ -28,4 +28,12 @@ small {
   font-family: canada-type-gibson, IBM Plex Sans Helvetica, Arial, “system-ui”, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 400;
 }
+
+button {
+  font-family: canada-type-gibson, IBM Plex Sans Helvetica, Arial, “system-ui”, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  /* Fix later */
+}
 /*# sourceMappingURL=style.css.map */
