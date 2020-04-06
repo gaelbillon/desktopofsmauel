@@ -2,6 +2,9 @@
 @import url("https://use.typekit.net/hey8lez.css");
 
 :root {
+  --font-primary: canada-type-gibson, Helvetica, Arial, sans-serif;
+  --font-secondary: Libre Caslon Text, Georgia, serif;
+  --font-tertiary: freight-big-pro, Merriweather, Georgia, serif;
   --font-weight-bold: 600;
   --font-weight-regular: 400;
   --color-brand-300: #fefdf4;
@@ -31,13 +34,15 @@
   --font-size-xxl: calc(56px + (72 - 56) * ((100vw - 320px) / (1600 - 320)));
   --font-size-xl: calc(36px + (56 - 36) * ((100vw - 320px) / (1600 - 320)));
   --font-size-l: calc(24px + (36 - 24) * ((100vw - 320px) / (1600 - 320)));
-  --font-size-m: calc(18px + (20 - 18) * ((100vw - 320px) / (1600 - 320)));
+  --font-size-m: 1.75rem;
   --transition: all 0.3s ease-in-out;
+  font-size: 18px;
 }
 
+/* Mobile */
 @media only screen and (max-width: 768px) {
   :root {
-    font-size: 18px;
+    font-size: 16px;
     --var-padding-l: 3rem;
     --var-padding-m: 1rem;
     --var-padding-s: 0.5rem;
@@ -51,7 +56,6 @@
 html {
   height: 100%;
   font-family: var(--font-secondary);
-  font-size: 18px;
   font-weight: var(--font-weight-regular);
   line-height: 2em;
   color: var(--color-black-500);
@@ -83,17 +87,18 @@ div > main {
 }
 
 h1 {
-  font-style: normal;
+  font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  font-size: calc(36px + (56 - 36) * ((100vw - 320px) / (1600 - 320)));
+  font-size: 2.5em;
   line-height: 120%;
   margin-top: var(--padding-s);
   letter-spacing: -0.75;
 }
 
 h2 {
-  font-size: calc(26px + (40 - 26) * ((100vw - 320px) / (1600 - 320)));
+  font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
+  font-size: calc(26px + (40 - 26) * ((100vw - 320px) / (1600 - 320)));
   line-height: calc(32px + (48 - 32) * ((100vw - 320px) / (1600 - 320)));
 }
 
@@ -139,6 +144,8 @@ h6 {
 }
 
 small {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
   text-transform: uppercase;
   line-height: normal;
   font-size: 12px;
@@ -148,7 +155,6 @@ small {
 }
 
 strong {
-  font-family: var(--font-secondary);
   font-weight: var(--font-weight-bold);
 }
 
@@ -177,6 +183,20 @@ a > button {
   border-bottom: none;
 }
 
+a > small {
+  border-bottom: none;
+}
+
+button {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  line-height: normal;
+  font-size: 12px;
+  letter-spacing: 0.075rem;
+  cursor: pointer;
+}
+
 a.linkicon {
   color: var(--color-secondary-500);
   transition: color 0.3s ease-in-out;
@@ -194,9 +214,9 @@ blockquote {
   padding: 1.5em 0 0.5em;
   margin: 3rem 0;
   font-family: var(--font-primary);
-  font-size: 1.5rem;
   font-weight: var(--font-weight-bold);
-  line-height: 1.4;
+  font-size: 1.5rem;
+  line-height: 1.5;
   position: relative;
 }
 blockquote:before {
@@ -281,7 +301,7 @@ p:first-child {
 }
 @media only screen and (max-width: 768px) {
   .full-bleed > div {
-    padding: 0 1rem;
+    padding: 0 7vw;
   }
 }
 

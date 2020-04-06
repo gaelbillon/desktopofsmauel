@@ -94,7 +94,7 @@ export default class PhotoPageTemplate extends React.Component {
             <Overlay />
             <Cover
               fluid={photo.cover.childImageSharp.fluid}
-              durationFadeIn="1000"
+              durationFadeIn={1000}
             />
             <TitleWrapper>
               <Title>{photo.title}</Title>
@@ -113,6 +113,7 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       body
+      excerpt
       frontmatter {
         path
         title

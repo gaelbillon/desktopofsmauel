@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
+import PageTitle from "elements/PageTitle";
 
 const Grid = styled.div`
   display: grid;
@@ -25,7 +26,8 @@ const Grid = styled.div`
     display: block;
 
     .noeffect:nth-child(4n + 1) {
-      display: block;
+      display: inline;
+    }
   }
 `;
 
@@ -38,6 +40,7 @@ const GridItem = styled.div`
 `;
 
 const GridHeading = styled.h3`
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-l);
 `;
 
@@ -53,7 +56,8 @@ const GridPhoto = styled(Img)`
 `;
 
 const GridTitle = styled.h2`
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
   line-height: 120%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -78,16 +82,15 @@ const GridExcerpt = styled.p`
   }
 `;
 
-const GridButton = styled.button`
-  box-shadow: none;
-  font-weight: 400;
-  border: 0;
+const GridButton = styled.small`
+  display: inline;
+  border-bottom: 0;
+  margin: 0 auto;
   opacity: 0;
   margin-top: 1rem;
   padding: 1rem 2rem;
   background-color: #b6aa8e;
   color: var(--color-white-300);
-  border-bottom: none;
   transition: var(--transition);
 
   @media only screen and (max-width: 767px) {
@@ -103,7 +106,7 @@ const GridButton = styled.button`
 class PhotoMagazine extends React.Component {
   getPostList() {
     const postList = [];
-    this.props.postEdges.forEach(postEdge => {
+    this.props.postEdges.forEach((postEdge) => {
       postList.push({
         path: "/photo" + postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
@@ -111,7 +114,7 @@ class PhotoMagazine extends React.Component {
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.frontmatter.tldr || postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead
+        timeToRead: postEdge.node.timeToRead,
       });
     });
     return postList;
@@ -131,7 +134,7 @@ class PhotoMagazine extends React.Component {
           </p>
         </GridItem>
         {/* Your post list here. */
-        postList.map(post => (
+        postList.map((post) => (
           <GridItem className="photo-item noeffect" key={post.title}>
             <Link to={post.path} className="noeffect">
               <GridPhoto sizes={post.cover.childImageSharp.sizes} />
