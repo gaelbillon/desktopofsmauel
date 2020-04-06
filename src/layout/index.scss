@@ -1,5 +1,6 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://use.typekit.net/hey8lez.css");
+
 :root {
   --font-primary: canada-type-gibson, Helvetica, Arial, sans-serif;
   --font-secondary: Libre Caslon Text, Georgia, serif;
@@ -49,8 +50,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -199,7 +199,6 @@ button {
 
 a.linkicon {
   color: var(--color-secondary-500);
-  -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
@@ -220,14 +219,12 @@ blockquote {
   line-height: 1.5;
   position: relative;
 }
-
 blockquote:before {
   content: "\201C";
   position: absolute;
   top: 0em;
   left: 50%;
-  -webkit-transform: translate(-50%, -55%);
-          transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
   background: #fff;
   width: 3rem;
   height: 4rem;
@@ -249,13 +246,11 @@ cite {
 
 button {
   background: var(--color-palette-500);
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 p:first-child {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
+  margin-block-start: 0;
 }
 
 .nav {
@@ -267,7 +262,6 @@ p:first-child {
 .textlink {
   color: var(--color-secondary-500);
   border-bottom: 1px var(--color-transparent) solid;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -303,10 +297,8 @@ p:first-child {
 .full-bleed {
   width: 100vw;
   margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-
 @media only screen and (max-width: 768px) {
   .full-bleed > div {
     padding: 0 7vw;
@@ -334,4 +326,3 @@ figure {
 .nav-item-active {
   background: #ffffff;
 }
-/*# sourceMappingURL=index.css.map */

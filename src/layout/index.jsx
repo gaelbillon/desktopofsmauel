@@ -1,11 +1,14 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { ThemeProvider } from "styled-components";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import styled from "styled-components";
 import { MDXProvider } from "@mdx-js/react";
 import Nav from "../components/Navigation/navigation-3";
 import Footer from "../components/Footer/Footer";
+
+const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../../static/css/_variables.scss');
 
 const Layout = styled.div`
   background-color: var(--color-background-500);
@@ -32,12 +35,14 @@ export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <Layout>
-        <SEO />
-        <Nav />
-        <Main>{children}</Main>
-        <Footer />
-      </Layout>
+      <ThemeProvider theme={theme}>
+        <Layout>
+          <SEO />
+          <Nav />
+          <Main>{children}</Main>
+          <Footer />
+        </Layout>
+      </ThemeProvider>
     );
   }
 }
