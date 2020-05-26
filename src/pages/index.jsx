@@ -324,7 +324,12 @@ export const pageQuery = graphql`
       }
     }
     Photo1: allMdx(
-      filter: { fileAbsolutePath: { regex: "/photo/" } }
+      filter: {
+        frontmatter: { 
+          draft: { ne: true }, 
+          posttype: { eq: "photo" } 
+        }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 4
     ) {
@@ -352,7 +357,12 @@ export const pageQuery = graphql`
       }
     }
     Photo2: allMdx(
-      filter: { fileAbsolutePath: { regex: "/photo/" } }
+      filter: {
+        frontmatter: { 
+          draft: { ne: true }, 
+          posttype: { eq: "photo" } 
+        }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 7
       skip: 4

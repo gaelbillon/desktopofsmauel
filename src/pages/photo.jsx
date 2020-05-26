@@ -63,7 +63,10 @@ export const pageQuery = graphql`
   query PhotoQuery {
     photo: allMdx(
       filter: {
-        frontmatter: { draft: { ne: true }, posttype: { eq: "photo" } }
+        frontmatter: { 
+          draft: { ne: true }, 
+          posttype: { eq: "photo" } 
+        }
       }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
