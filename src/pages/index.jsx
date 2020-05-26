@@ -15,7 +15,7 @@ import BlogListing from "../components/BlogListing";
 import WorkIcon from "../../static/SVG/Work.svg";
 import BlogIcon from "../../static/SVG/Blog.svg";
 import Now from "../components/Now";
-import Profile from "../../static/images/Profile.webp";
+// import Profile from "../../static/images/Profile.webp";
 import IndexHero from "../components/IndexHero";
 import IndexPhoto from "../components/IndexPhoto";
 
@@ -92,13 +92,13 @@ const AboutIcon = styled.div`
 
 const HalfBox = styled.div``;
 
-const ProfileImage = styled.div`
-  width: 100%;
+// const ProfileImage = styled.div`
+//   width: 100%;
 
-  img {
-    box-shadow: 10px 10px 0px 1px rgba(237, 237, 237, 1);
-  }
-`;
+//   img {
+//     box-shadow: 10px 10px 0px 1px rgba(237, 237, 237, 1);
+//   }
+// `;
 
 const Subtitle = styled.p`
   font-size: 1.025rem;

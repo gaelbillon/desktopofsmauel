@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCube } from "@fortawesome/free-solid-svg-icons";
 import Boxed from "../elements/Boxed";
-import Profile from "../../static/images/Profile.png";
+import Profile from "../../static/images/Profile.jpg";
 import Link from "./common/GatsbyLink";
 import Column from "../elements/Column";
 import Emoji from "./common/Emoji";

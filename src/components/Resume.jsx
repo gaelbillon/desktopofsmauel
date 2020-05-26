@@ -78,7 +78,7 @@ const Resume = () => {
             meta="2015 - 2019"
           />
           <ResumeItem
-            title="Co-founder/Managing director at Escadrone"
+            title="Co-founder & Managing director at Escadrone"
             meta="2014 - 2017"
           />
         </ResumeSection>
