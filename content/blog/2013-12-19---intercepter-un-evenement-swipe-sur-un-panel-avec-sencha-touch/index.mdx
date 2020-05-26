@@ -1,0 +1,34 @@
+---
+id: "/intercepter-un-evenement-swipe-sur-un-panel-avec-sencha-touch"
+path: "/intercepter-un-evenement-swipe-sur-un-panel-avec-sencha-touch"
+date: "2013-12-19T18:21:06.000Z"
+title: "Intercepter un évènement swipe sur un panel avec Sencha Touch"
+category: "Applications mobiles"
+tags: 
+  - "Mobile Apps"
+  - "event"
+  - "Français"
+  - "sencha architect"
+  - "sencha touch"
+  - "swipe"
+  - "touch"
+tldr: ""
+cover: "./swipe-sencha.jpg"
+draft: false
+---
+
+```javascript
+element.on({
+     swipe: function(e, node, options){
+         if(e.direction == "left") {
+              console.log('swipe left');
+         } else if(e.direction == "right"){
+              console.log('swipe right');
+         }
+     }
+ });
+```
+
+Et avec Sencha Architect, il faudra utiliser au préalable l'évènement onPanelPainted :
+
+[![sencha architect listen swipe event](./Screen-Shot-2013-12-18-at-12.38.56.png)](/posts/wp-content/uploads/2013/12/Screen-Shot-2013-12-18-at-12.38.56.png)

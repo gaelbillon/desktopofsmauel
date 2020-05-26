@@ -34,8 +34,8 @@ const PhotoPage = ({ data }) => {
   return (
     <Layout
       title="Photography"
-      description="Photography Portfolio of Samuel W."
-      keywords="Photography, Travel, Sightseeing, Canon, iPhone, City, Journey"
+      description="Photography Portfolio of Gaël B."
+      keywords="Photography, Travel, Sony, iPhone, Parrot"
     >
       <PhotoBoxed>
         <Grid>
@@ -63,8 +63,7 @@ export const pageQuery = graphql`
   query PhotoQuery {
     photo: allMdx(
       filter: {
-        fileAbsolutePath: { regex: "/photo/" }
-        frontmatter: { draft: { ne: true } }
+        frontmatter: { draft: { ne: true }, posttype: { eq: "photo" } }
       }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {

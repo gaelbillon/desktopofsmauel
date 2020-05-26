@@ -131,9 +131,9 @@ class NavBar extends React.Component {
           <NavSection>
             <NavLeft>
               <Title to="/" className="noeffect">
-                Samuel W.
+                Gaël B.
               </Title>
-              <Description>User Experience Designer</Description>
+              <Description>Web consultant</Description>
             </NavLeft>
             <NavRight>
               <NavItem

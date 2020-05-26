@@ -59,7 +59,7 @@ const ResumeParagraph = styled.p`
 const Resume = () => {
   return (
     <Section>
-      <Title as="h1">Samuel Wong</Title>
+      <Title as="h1">Gaël Billon</Title>
       {/*     <Subtitle>
       I’m now pursuing a career in the field of UI/UX Design because I'm deeply
       passionate about technology and how it profoundly changes our way of
@@ -70,16 +70,16 @@ const Resume = () => {
         <ResumeSectionTitle>Career</ResumeSectionTitle>
         <ResumeSection>
           <ResumeItem
-            title="Principal Designer at HyperAir"
-            meta="2019 - Now"
+            title="Freelance web consultant"
+            meta="2018 - Now"
           />
           <ResumeItem
-            title="Co-founder & Director at Playa"
+            title="Proxy Porduct Owner at Schneider Electric"
             meta="2015 - 2019"
           />
           <ResumeItem
-            title="Cross Content Intern at Apple"
-            meta="2013 - 2014"
+            title="Co-founder/Managing director at Escadrone"
+            meta="2014 - 2017"
           />
         </ResumeSection>
       </Block>
@@ -87,26 +87,28 @@ const Resume = () => {
       <Block>
         <ResumeSectionTitle>Education</ResumeSectionTitle>
         <ResumeItem
-          title="The University of Hong Kong"
-          content="Bachelor of Arts"
-          meta="2011 - 2014"
+          title="Lycée Aristide Bergès"
+          content="Bac scientifique"
+          meta="2008 - 2011"
         />
       </Block>
       <Block>
         <ResumeSectionTitle>Skills</ResumeSectionTitle>
         <div>
-          <p>Figma, Sketch, Abstract, Avocode </p>
-          <p>HTML, CSS, Git, Google Analytics</p>
-          <p>Adobe Creative Suite</p>
+          <p>HTML, CSS, Javascript, PHP, Git</p>
+          <p>SEO, SXO, Analytics, Tag Manager</p>
+          <p>Prototyping, wireframing, atomic design</p>
         </div>
       </Block>
       <Block>
         <ResumeSectionTitle>Language</ResumeSectionTitle>
         <div>
           <ResumeParagraph>
-            Native in Cantonese
+            Native in French (C2)
             <br />
-            Professional Proficiency in English
+            Professional Proficiency in English (C1)
+            <br />
+            Intermediate in Spansish (B1)
           </ResumeParagraph>
         </div>
       </Block>

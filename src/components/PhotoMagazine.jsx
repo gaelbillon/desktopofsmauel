@@ -126,10 +126,11 @@ class PhotoMagazine extends React.Component {
           <GridHeading>On Photography</GridHeading>
           <GridSeparator />
           <p>
-            I’m greatly inspired by cities and stories within. Therefore I
-            publish sets of photos according to cities that I have visited. More
-            photos on my{" "}
-            <a href="http://www.instagram.com/desktopofsamuel">Instagram</a>.
+            On my free time, if I ever happen to be alone, I like taking pictures, 
+            with real lenses. And with a drone. I then spend way too much time 
+            sorting, editing and adjusting hundreds of files. More photos on my{" "}
+            <a href="http://www.instagram.com/desktopofsamuel">Instagram</a>{" "}
+            and <a href="https://www.flickr.com/photos/96191978@N08/">Flickr</a>
           </p>
         </GridItem>
         {/* Your post list here. */

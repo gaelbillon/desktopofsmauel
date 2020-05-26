@@ -38,11 +38,11 @@ const Right = styled.main`
   grid-area: right;
 `;
 
-/* const CategoryBlock = styled.div`
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-`; */
+const CategoryBlock = styled.div`
+@media only screen and (max-width: 768px) {
+  display: none;
+}
+`; 
 
 const BlogPage = ({ data }) => {
   const postEdges = data.allMdx.edges;
@@ -50,35 +50,35 @@ const BlogPage = ({ data }) => {
   return (
     <Layout
       title="Design Blog"
-      description="Hi! My name is Samuel. I write blog about web design, user interface and experiecne design."
-      keywords="Design,Blog,Web,App,UI,UX,Interface,Portfolio,Hong Kong,Writing"
+      description="Hi! My name is Gaël. I write about web development, photogrammetry and drones."
+      keywords="Webdev,Blog,Web,Mibile Apps,UI,UX, Drone, Photogrammetry"
     >
       <Row>
         <Box>
           <PageTitle
             title="Blog"
             subtitle="Article"
-            description="A collection of posts I wrote about design process, technology and
-                productivity."
+            description="A collection of posts I wrote about about 
+            web development, photogrammetry and drones."
           />
           <Main>
             <Left>
               <Row>
-                {/* <CategoryBlock>
+                <CategoryBlock>
                   <small>Top Categories</small>
                   <h3>
-                    <Link to="/categories/design-journal">Design</Link>
+                    <Link to="/categories/mobile-apps">Mobile applications</Link>
                   </h3>
                   <h3>
-                    <Link to="/categories/work-in-progress">Development</Link>
+                    <Link to="/categories/webperf">Web performance</Link>
                   </h3>
                   <h3>
-                    <Link to="/categories/productivity">Productivity</Link>
+                    <Link to="/categories/static">Static websites</Link>
                   </h3>
                   <h3>
-                    <Link to="/categories/ctrl-alt-setup">Ctrl Alt Setup</Link>
+                    <Link to="/categories/uav">UAV</Link>
                   </h3>
-                </CategoryBlock> */}
+                </CategoryBlock>
               </Row>
             </Left>
             <Right>

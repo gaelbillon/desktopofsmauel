@@ -196,16 +196,16 @@ const AboutPage = ({ data }) => {
           </PhotoFrame>
           <WrapperIntro>
             <Intro>
-              <small>Hi! My name is Samuel.</small>
+              <small>Hi! My name is Gaël.</small>
               <p>
-                I&apos;m pursuing a career in the field of UI/UX Design because
-                I&apos;m deeply passionate about technology and how it
-                profoundly changes our way of living. <br />
+                Hi, I’m Gaël, born and raised in the world wide web. Web developper 
+                since 1998, Business Analyst, Mobile web apps developer Search 
+                optimizer & webmarketing specialist, Webperformance activist, 
+                User experience & customer satisfaction zealot.<br />
                 <br />
-                The process of turning an idea into a viable product gives me
-                great satisfaction. Being a self-starter, I’m highly motivated
-                staying up-to-date with the latest technology, industry practice
-                and design trends.
+                I like designing web applications, increasing pageviews and 
+                crafting a perfect user experience from Search Engine Result 
+                Page to after sale customer service.
               </p>
               <WrapperNav>
                 <Link to="#bio">
@@ -226,12 +226,11 @@ const AboutPage = ({ data }) => {
         <Boxed>
           <P1>
             <small>01. Bio</small>
-            <h2 className="no-margin">Journey to Design</h2>
+            <h2 className="no-margin">Journey to Web development</h2>
             <p>
-              I studied cultural and film theories at The University of Hong
-              Kong. I took a gap year and worked in iTunes & App Store, Apple as
-              a Cross-Content Intern during college and this valuable experience
-              sparked my interest in digital products and web.
+              Having a computer at home since I whas a child, I quickly began 
+              poking at it. I never liked school too much. After high school, 
+              I taught myself some web development and started freelancing. 
             </p>
           </P1>
           <PhotoFrame>
@@ -244,15 +243,11 @@ const AboutPage = ({ data }) => {
           <GridBio>
             <P2>
               <p>
-                After my internship, I took on some freelance projects as well
-                as volunteered for students and community organisations,
-                acquiring various skill sets to be a hybrid designer.
+                In 2004 I co-founded a company (escadrone.com) with a friend 
+                for a few years and in 2017 got back before to web design at 
+                Schneider Electric as a Business Analyst.
                 <br />
-                <br />I started an agency Playa with a partner in 2015, hoping
-                to help small businesses, entrepreneurs and nonprofits launch
-                their projects and bridge the gap between project owners and
-                end-users. We have launched dozens of websites and apps in Hong
-                Kong with multiple recognitions.
+                <br />I'm now working as a freelance web consultant.
                 <br />
                 <br />
                 {/* Currently, I work as the Principal Designer at Hyperair, a
@@ -272,23 +267,23 @@ const AboutPage = ({ data }) => {
       <AltRow id="skills" className="full-bleed">
         <Boxed>
           <small>03. Skills</small>
-          <h2 className="no-margin">Design, Photography, Writing.</h2>
+          <h2 className="no-margin">Web development, User Experience, Photography</h2>
           <GridSkill>
             <DesignPart>
               <h3>Design</h3>
             </DesignPart>
             <DesignContent>
               <p>
-                Design has been an integral part of my life. It’s been my
-                passion to learn how to deliver functional and elegant design.{" "}
+                I've always be interested in web development.
+                Since I built my first website in 1998, I never stopped learning.{" "}
               </p>
               <SkillList>
+                <li>Frontend Development</li>
+                <li>Web performance</li>
+                <li>Web marketing</li>
+                <li>Prototyping</li>
                 <li>Web & App UI Design</li>
                 <li>User Experience Design</li>
-                <li>Interaction Design</li>
-                <li>Prototyping</li>
-                <li>Wireframing</li>
-                <li>Frontend Development</li>
               </SkillList>
             </DesignContent>
           </GridSkill>
@@ -298,14 +293,13 @@ const AboutPage = ({ data }) => {
             </PassionPart>
             <PassionContent>
               <p>
-                Through freelancing, I&apos;m also practicing in the field of
-                digital products and media, to become a hybrid creative.
+                Although I like spending my off time in front of a computer
+                I am fortunate enough to have occupations that require going outside.
               </p>
               <SkillList>
+                <li>Photogrametry</li>
                 <li>Photography</li>
-                <li>Videography</li>
-                <li>Social Media</li>
-                <li>Copywriting</li>
+                <li>Cartography</li>
               </SkillList>
             </PassionContent>
           </GridSkill>

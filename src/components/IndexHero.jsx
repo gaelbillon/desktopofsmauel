@@ -7,6 +7,7 @@ import {
   faMedium,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCube } from "@fortawesome/free-solid-svg-icons";
 import Boxed from "../elements/Boxed";
 import Profile from "../../static/images/Profile.png";
 import Link from "./common/GatsbyLink";
@@ -47,43 +48,44 @@ const IndexHero = () => {
       <Image>
         <img src={Profile} alt="Samuel W." />
       </Image>
-      <Title>Samuel W.</Title>
+      <Title>Gaël B.</Title>
       <Column>
         <IntroWrapper>
           <Subtitle>
             I am a{" "}
-            <Link to="/#experience-designer">user exerpierence designer</Link>,{" "}
+            <Link to="/#experience-designer">web consultant</Link>,{" "}
             <Link to="/#blog">blogger</Link> and{" "}
             <Link to="/#photography">photographer</Link>.
           </Subtitle>
           <Subtitle>
-            I co-founded Playa, a web & app agency. Before that, I worked as
-            Cross-Content Intern at iTunes & App Store, Apple.
+            I worked as a Proxy Product Owner at Schneider Electric. 
+            Before that, I co-founded Escadrone, a drone pilot training 
+            center. I'm now freelancing.
           </Subtitle>
         </IntroWrapper>
         <LinkWrapper>
           <small>Contact</small>
           <div>
             <Emoji symbol="📬" />{" "}
-            <Link to="mailto:desktopofsamuel&#64;gmail.com" target="_blank">
-              desktopofsamuel&#64;gmail.com
+            <Link to="mailto:gael.billon&#64;gmail.com" target="_blank">
+              gael.billon&#64;gmail.com
             </Link>
           </div>
           <div>
             <Emoji symbol="🎤" />{" "}
             <Link
-              to="https://www.linkedin.com/in/wongchunlong/"
+              to="https://www.linkedin.com/in/gaelbillon/"
               target="_blank"
             >
               Linkedin
             </Link>{" "}
             /{" "}
-            <Link to="https://www.twitter.com/desktopofsamuel" target="_blank">
+            <Link to="https://www.twitter.com/gaelbillon" target="_blank">
               Twitter
             </Link>{" "}
             /{" "}
             <Link
-              to="https://www.instagram.com/desktopofsamuel"
+              to="https://www.instagram.com/gael_billon"
               target="_blank"
             >
               Instagram

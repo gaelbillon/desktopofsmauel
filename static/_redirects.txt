@@ -1,0 +1,43 @@
+/en/a-node-js-module-to-read-serial-port-data /a-node-js-module-to-read-serial-port-data
+/en/photogrammetry-with-parrot-anafi-and-pix4d-capture /photogrammetry-with-parrot-anafi-and-pix4d-capture
+/en/shooting-in-raw-dng-with-the-parrot-anafi-and-pix4d-capture /shooting-in-raw-dng-with-the-parrot-anafi-and-pix4d-capture
+/en/create-a-sftp-user-restricted-to-a-var-www-directory-on-ubuntu-debian create-a-sftp-user-restricted-to-a-var-www-directory-on-ubuntu-debian
+/en/search-whatsapp-photos-on-google-photos /search-whatsapp-photos-on-google-photos
+
+/developpement-dapplication-mobiles-multiplateformes/outils-et-frameworks/ /work 
+/en/english-blog/ /blog
+/en/product-owner-business-analyst-mobile-web-developer-grenoble/ /about
+/en/cross-platform-mobile-applications-development/ /work
+/developpement-dapplication-mobiles-multiplateformes/ /work
+/optimisation-de-la-performance-web/ /work
+
+portfolio-item/myorpheo /work/myorpheo
+portfolio-item/site-mobile-nature-capitale /work/site-mobile-nature-capitale
+portfolio-item/parachutedrone-com-un-site-e-commerce-prestashop-multilingue-optimise /work/parachutedrone-com-un-site-e-commerce-prestashop-multilingue-optimise
+en/portfolio-item/856 /work/mobile-site-for-tourism-in-the-city-of-parthenay
+en/portfolio-item/haze-festival-ios-android-mobile-application /work/haze-festival-ios-android-mobile-application
+en/portfolio-item/waterscap-es-a-static-site-made-with-gatsby /work/waterscap-es-a-static-site-made-with-gatsby
+en/portfolio-item/waterscapes-a-react-native-ios-and-android-application-2 /work/waterscapes-a-react-native-ios-and-android-application-2
+portfolio-item/waterscapes-application-react-native-ios-et-android /work/waterscapes-application-react-native-ios-et-android
+en/portfolio-item/data-visualization-dashboard /work/data-visualization-dashboard
+portfolio-item/tableau-de-bord-de-visualisation-de-donnees /work/tableau-de-bord-de-visualisation-de-donnees
+portfolio-item/site-responsive-du-chalet-daslo /work/site-responsive-du-chalet-daslo
+portfolio-item/site-mobile-de-parthenay /work/site-mobile-de-parthenay
+portfolio-item/waterscap-es-un-site-statique-realise-avec-gatsby /work/waterscap-es-un-site-statique-realise-avec-gatsby
+portfolio-item/station-de-controle-pour-drone /work/station-de-controle-pour-drone
+portfolio-item/application-haze-festival /work/application-haze-festival
+portfolio-item/parachutedrone-com-site-de-e-commerce-multilingue-specialise-dans-la-vente-daccessoires-pour-drones-de-loisirs-et-professionnels /work/parachutedrone-com-site-de-e-commerce-multilingue-specialise-dans-la-vente-daccessoires-pour-drones-de-loisirs-et-professionnels
+en/portfolio-item/uav-ground-control-station-web-app-with-node-serialport /work/uav-ground-control-station-web-app-with-node-serialport
+portfolio-item/optimisation-des-performances-dun-site-wordpress-multilingue /work/optimisation-des-performances-dun-site-wordpress-multilingue
+
+/en/portfolio/ /work
+/portfolio-item/ /work
+/portfolio_entries/applications-mobiles/ /categories/mobile-apps
+/portfolio_entries/data-visualisation/ /categories/other
+/en/portfolio_entries/data-visualization/ /categories/other
+/portfolio_entries/ecommerce/ /categories/webdev
+/en/portfolio_entries/mobile-applications/ /categories/mobile-apps
+/portfolio_entries/sites-responsive/ /categories/webdev
+/portfolio_entries/sites-statiques/ /categories/static
+/en/portfolio_entries/static-websites/ /categories/static
+/portfolio_entries/web-performance/ /categories/webperf

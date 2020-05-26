@@ -11,6 +11,7 @@ import {
   faMedium,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCube } from "@fortawesome/free-solid-svg-icons";
 import Link from "./GatsbyLink";
 
 const Container = styled.footer`
@@ -196,20 +197,20 @@ const Footer = () => {
             <FooterItem className="noeffect" to="/blog">
               Blog
             </FooterItem>
-            <FooterItem
+            {/* <FooterItem
               className="noeffect"
               to="https://pins.desktopofsamuel.com"
             >
               Pins
-            </FooterItem>
+            </FooterItem> */}
             <FooterItem className="noeffect" to="/photo">
               Photo
             </FooterItem>
           </LinkContainer>
           <CreditContainer>
             <CreditText>
-              Design & Code © 2018 - 2020 Samuel W. | Built with{" "}
-              <Link to="https://www.gatsbyjs.org">Gatsby</Link>.
+              Design & Code © 2018 - 2020 <a  href="https://desktopofsamuel.com">Samuel W.</a> | Content © 2013 - 2020 Gaël Billon | Built with{" "}
+              <Link to="https://www.gatsbyjs.org">Gatsby</Link>. 
             </CreditText>
           </CreditContainer>
         </Boxed>

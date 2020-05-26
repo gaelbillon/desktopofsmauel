@@ -200,11 +200,11 @@ const IndexPage = ({ data }) => {
             <StickyBox>
               <StickyWrapper>
                 <small>01.</small>
-                <h2 className="no-margin">Interaction and Experience Design</h2>
+                <h2 className="no-margin">Web developer and marketer</h2>
 
                 <p>
-                  I'm a multi-disciplinary designer with 5 years of experience
-                  in delivering elegant design and practical solutions.
+                  I'm a multi-disciplinary developer with 10 years of experience
+                  in delivering apps &  websites that user wants to use.
                 </p>
                 <ReadOn text="View My Work" href="/work" />
               </StickyWrapper>
@@ -220,9 +220,9 @@ const IndexPage = ({ data }) => {
               <StickyWrapper>
                 <BlogIntro>
                   <small>02.</small>
-                  <h2 className="no-margin">Notes on Design & Technology</h2>
+                  <h2 className="no-margin">Notes on Web development & Technology</h2>
                   <Subtitle>
-                    I write about design, technology and productivity.
+                    I write about web development, technology and drones.
                   </Subtitle>
                   <ReadOn text="Read All Blog Posts" href="/blog" />
                 </BlogIntro>
@@ -241,7 +241,7 @@ const IndexPage = ({ data }) => {
             <h6>03.</h6>
             <h2>Photography</h2>
             <Subtitle>
-              Sets of photos according to cities that I have visited.
+              Photos of places I've been to.
             </Subtitle>
             <ReadOn text="More Photos" href="/photo" />
           </PhotoIntro>

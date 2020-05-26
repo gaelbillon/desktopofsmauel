@@ -4,11 +4,10 @@ import ReadOn from "../elements/ReadOn";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Carousel, { Dots } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
-import Playa from "../../static/images/workshot/Playa.png";
-import CDC from "../../static/images/workshot/CDC.png";
-import TgtAtHomeClub from "../../static/images/workshot/TgtAtHomeClub.png";
-import WaterForFree from "../../static/images/workshot/WaterForFree.png";
-import Pingspace from "../../static/images/workshot/Pingspace.png";
+import Escadrone from "../../static/images/workshot/Escadrone-on-ipad.png";
+import Parachutedrone from "../../static/images/workshot/parachutedrone-com-on-macbook.png";
+import EcoStruxure from "../../static/images/workshot/EcoStruxure_Power_Build-Contractor_Screen_3-IC-490x280.png";
+import Parthenay from "../../static/images/workshot/blackerry-parthenay.png";
 
 const IconWrapper = styled.div`
   padding: 1rem;
@@ -78,33 +77,36 @@ const WorkList = data => {
       slidesPerPage={3}
     >
       <ListedItem
-        title="Together At Home"
-        description="A collection of free and discounted resources during COVID-19 outbreak."
-        url="https://tgtathome.club/"
-        role="Creator"
-        image={TgtAtHomeClub}
+        title="EcoStruxure Power Build Contractor"
+        description="All-in-one online configuration and quotation software dedicated to MV equipment installers."
+        url="https://www.se.com/fr/fr/work/products/product-launch/ecoreal-mv/"
+        year="2017"
+        role="Proxy Product Owner"
+        image={EcoStruxure}
       />
       <ListedItem
-        title="CDC Connects"
-        description="App for Parents, School and Children to track goals for Children With Special Educational Needs"
-        url="https://www.cdchk.org/news/cdc-app-launch/"
-        year="2019"
-        role="UI/UX Designer, Project Manager"
-        image={CDC}
+        title="Parachutedrone.com"
+        description="A blazing fast e-commerce website built with Prestashop, NGINX, Redis, PHP FPM, Varnish, CDN."
+        url="https://parachutedrone.com/"
+        year="2016"
+        role="Project Manager"
+        image={Parachutedrone}
       />
       <ListedItem
-        title="Pingspace"
-        description="Landing page for SaaS side-project, an intelligent website uptime monitor"
-        url="https://playa.hk/projects/pingspace.html"
-        role="UI/UX Designer"
-        image={Pingspace}
+        title="Parthenay"
+        description="This mobile site application is used to visit the community of communes of Parthenay runs on iPhone, Android, BlackBerry, Windows Phone."
+        url="http://mobile.parthenay.com"
+        year="2013"
+        role="Web developer"
+        image={Parthenay}
       />
       <ListedItem
-        title="Playa"
-        description="Homepage and Portfolio for the digital agency that I have co-founded"
-        url="https://playa.hk/"
-        role="Director, Design Lead"
-        image={Playa}
+        title="Escadrone"
+        description="UAV pilot training center, bespoke drone design and manufacturing."
+        url="https://escadrone.com/"
+        year="2014"
+        role="Co-founder"
+        image={Escadrone}
       />
     </Carousel>
   );
