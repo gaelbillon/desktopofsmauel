@@ -1,6 +1,6 @@
 ---
-id: "/configurer-gratuitement-un-serveur-ubuntu-en-10-min-avec-amazon-ec2"
-path: "/configurer-gratuitement-un-serveur-ubuntu-en-10-min-avec-amazon-ec2"
+id: "/configurer-gratuitement-un-serveur-ubuntu-en-dix-min-avec-amazon-ec-deux"
+path: "/configurer-gratuitement-un-serveur-ubuntu-en-dix-min-avec-amazon-ec-deux"
 date: "2013-05-10T16:28:20.000Z"
 title: "Configurer gratuitement un serveur ubuntu en 10 min avec amazon EC2"
 category: "Devops"
@@ -69,7 +69,7 @@ Puis sur “close”
 
 On attend que l’instance se lance, ca devrait prendre quelques secondes, puis on copie le "public DNS", ici : `ec2-54-216-58-83.eu-west-1.compute.amazonaws.com.` On pourra aussi y accéder avec l’IP 54.216.58.83.
 
-On va ensuite s’occuper du SSH, pour se connecter en sftp voir [ce post](/posts/se-connecter-en-sftp-a-une-instance-ec2-avec-transmit/ "Se connecter en SFTP à une instance EC2 avec Transmit"). Pour se connecter en ssh , ouvrir un terminal, naviguer jusqu’au dossier contenant le fichier pem téléchargé.
+On va ensuite s’occuper du SSH, pour se connecter en sftp voir [ce post](/se-connecter-en-sftp-a-une-instance-ec-deux-avec-transmit/ "Se connecter en SFTP à une instance EC2 avec Transmit"). Pour se connecter en ssh , ouvrir un terminal, naviguer jusqu’au dossier contenant le fichier pem téléchargé.
 
 Il faut d’abord changer les droit sur le fichier pem
 `chmod 400 aws.pem`
@@ -131,4 +131,4 @@ ec2-54-216-58-83.eu-west-1.compute.amazonaws.com/phpmyadmin
 login : `root` 
 mot de passe : celui utilisé lors de l’installation de mysql 
 
-Dans le [prochain post](/posts/creer-un-virtual-host-une-elastic-ip-et-rediriger-son-domaine-vers-ec2/ "Créer un virtual host, une elastic IP et rediriger son domaine vers EC2") on vera comment configurer un virtualhost, créer une elasctic ip et rediriger un domaine existant vers ec2
+Dans le [prochain post](/creer-un-virtual-host-une-elastic-ip-et-rediriger-son-domaine-vers-ec-deux/ "Créer un virtual host, une elastic IP et rediriger son domaine vers EC2") on vera comment configurer un virtualhost, créer une elasctic ip et rediriger un domaine existant vers ec2

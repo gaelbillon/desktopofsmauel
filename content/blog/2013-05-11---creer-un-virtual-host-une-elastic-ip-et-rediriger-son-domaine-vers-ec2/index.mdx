@@ -1,6 +1,6 @@
 ---
-id: "/creer-un-virtual-host-une-elastic-ip-et-rediriger-son-domaine-vers-ec2"
-path: "/creer-un-virtual-host-une-elastic-ip-et-rediriger-son-domaine-vers-ec2"
+id: "/creer-un-virtual-host-une-elastic-ip-et-rediriger-son-domaine-vers-ec-deux"
+path: "/creer-un-virtual-host-une-elastic-ip-et-rediriger-son-domaine-vers-ec-deux"
 date: "2013-05-11T18:42:08.000Z"
 title: "Créer un virtual host, une elastic IP et rediriger son domaine vers EC2"
 category: "Devops"
@@ -25,7 +25,7 @@ mkdir ~/ubuntu/public\_html/domain.com/log
 chmod -R 755 ~/ubuntu/public\_html/domain.com
 ```
 
-Il faut ensuite modifier la config d’apache pour qu’il sache ou se trouve notre dossier domain.com, par défaut les sites accesible par apache sont dans `/var/www` , ici on préfère mettre domain.com dans le repertoire utilisateur (`/home/users/ubuntu`) afin de pouvoir y accéder facilement avec un client ftp. Pour se connecter en SFTP tout est expliqué dans [cet article](/posts/se-connecter-en-sftp-a-une-instance-ec2-avec-transmit/ "Se connecter en SFTP à une instance EC2 avec Transmit").
+Il faut ensuite modifier la config d’apache pour qu’il sache ou se trouve notre dossier domain.com, par défaut les sites accesible par apache sont dans `/var/www` , ici on préfère mettre domain.com dans le repertoire utilisateur (`/home/users/ubuntu`) afin de pouvoir y accéder facilement avec un client ftp. Pour se connecter en SFTP tout est expliqué dans [cet article](/se-connecter-en-sftp-a-une-instance-ec-deux-avec-transmit/ "Se connecter en SFTP à une instance EC2 avec Transmit").
 
 On va créer un nouveau fichier dans sites-available nano /etc/apache2/sites-available/domain.com
 
