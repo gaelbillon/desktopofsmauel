@@ -30,10 +30,11 @@ class PostTemplate extends React.Component {
           <MDXRenderer>{postNode.body}</MDXRenderer>
         </Container>
         <CommentoContainer>
-          <Commento id={postNode.frontmatter.path} /> 
+          <Commento /> 
         </CommentoContainer>  
       </div>
     );
   }
 }
+// id={postNode.frontmatter.path} 
 export default PostTemplate;
