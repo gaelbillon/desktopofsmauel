@@ -13,6 +13,10 @@ const Container = styled.main`
   }
 `;
 
+const CommentoContainer = styled.main`
+  margin-top: 100px;
+`;
+
 class PostTemplate extends React.Component {
   render() {
     const { postNode } = this.props;
@@ -25,10 +29,12 @@ class PostTemplate extends React.Component {
           <h1>{post.title}</h1>
           <MDXRenderer>{postNode.body}</MDXRenderer>
         </Container>
-        <Commento />
+        <CommentoContainer>
+          <Commento data-no-fonts="true"/> 
+        </CommentoContainer>  
       </div>
     );
   }
 }
-
+//data-no-fonts="true" data-page-id="/path/to/older/post.html" data-css-override="path-to-file"
 export default PostTemplate;
