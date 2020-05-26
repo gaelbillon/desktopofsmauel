@@ -17,6 +17,7 @@ const removeScript = (id, parentElement) => {
 };
 // The actual component
 const Commento = ({ id }) => {
+  const CommentoId = id + '/';
   useEffect(() => {
     // If there's no window there's nothing to do for us
     if (!window) {
@@ -30,6 +31,6 @@ const Commento = ({ id }) => {
     // Cleanup; remove the script from the page
     return () => removeScript('commento-script', document.body);
   }, [id]);
-  return <div id={'commento'} data-no-fonts="true" data-page-id={id} />; //  data-css-override="path-to-file"
+  return <div id={'commento'} data-no-fonts="true" data-page-id={CommentoId} />; //  data-css-override="path-to-file"
 };
 export default Commento;
