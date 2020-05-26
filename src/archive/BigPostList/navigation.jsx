@@ -101,7 +101,7 @@ export default class Navigation extends React.Component {
           <NavBar>
             <SiteID>
               <Title>
-                <Link to="/">SAMUEL W.</Link>
+                <Link to="/">GAEL B.</Link>
               </Title>
               <Description>
                 User Experience Designer in Hong Kong <br />
