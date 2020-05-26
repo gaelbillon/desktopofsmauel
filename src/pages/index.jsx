@@ -293,7 +293,7 @@ export const pageQuery = graphql`
     Blog: allMdx(
       limit: 4
       sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { category: { eq: "Design Journal" } } }
+      filter: { frontmatter: { category: { eq: "Static" } } }
     ) {
       edges {
         node {
