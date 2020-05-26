@@ -15,18 +15,18 @@ url: "https://github.com/gaelbillon/Nodejs-Websockets-GCS"
 cover: "./Nodejs_websockets__angular_mavlink_ground-control-station.jpg"
 ---
 
-[![Nodejs_websockets__angular_mavlink_ground-control-station](./2013-05-29---uav-ground-control-station-web-app-with-node-serialport/Nodejs_websockets__angular_mavlink_ground-control-station-495x400.jpg)](/posts/wp-content/uploads/2013/05/Nodejs_websockets__angular_mavlink_ground-control-station.jpg)
+[Nodejs_websockets__angular_mavlink_ground-control-station](./Nodejs_websockets__angular_mavlink_ground-control-station-495x400.jpg)
 
 This application is a GCS short for Ground Cotrol Station. It receives and display flight informations for an unmanned aircraft.
 
 The application opens a websocket connection between the client (a web browser) and the server, the connection stays open afterwards and the server can push informations. The clientthe client does not need to poll the server every X seconds to get updated flight informations.
 
-[![radio-telemetry-kit-433mhz](./2013-05-29---uav-ground-control-station-web-app-with-node-serialport/radio-telemetry-kit-433mhz.jpg)](http://store.3drobotics.com/products/3dr-radio-telemetry-kit-433-mhz)
+[radio-telemetry-kit-433mhz](./radio-telemetry-kit-433mhz.jpg)
 Flight informations are read from the serial port with the Node.js module named [Node Serialport](https://www.npmjs.com/package/serialport) . The Serialport module read data from a 433 MHz telemetry module as the one shown above.
 
 The informations received on the serial port can then be parsed with the help of another node [module named Mavlink](https://npmjs.org/package/mavlink)  which helps to decode the messages received in [Mavlink](http://qgroundcontrol.org/mavlink/start) (a communication protocol for drones).
 
-The flight informations can then be displayed and updated in real time on the web interface thanks to [Angular.js](/posts/outils-et-frameworks/#angular) two way data-binding which automatically update the view when new data are available.
+The flight informations can then be displayed and updated in real time on the web interface thanks to [Angular.js](https://angularjs.org/) two way data-binding which automatically update the view when new data are available.
 
 CSS3 transition are used are used to display a compass without resorting to heavy javascript animations. On the following line : '_div(class='compass', style='-webkit-transform:rotate({{heading}}deg)')_' '_{heading}_' is a Mavlink message recevied from the serial port.
 

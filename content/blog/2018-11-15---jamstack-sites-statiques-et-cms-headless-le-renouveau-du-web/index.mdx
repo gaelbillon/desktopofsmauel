@@ -46,7 +46,7 @@ L'une des beautés des sites statiques c'est le fort découplage entre contenu (
 
 Ces CMS offre des APIs qui permettent d'accéder à son contenu. Il est même possible d'effectuer les requêtes avec GraphQL !
 
-Un article plus approfondi sur les CMS headless : [CMS headless: avantages, inconvénients & comparatif des 5 leaders](/posts/cms-headless-avantages-inconvenients-comparatif-des-5-leaders/)
+Un article plus approfondi sur les CMS headless : [CMS headless: avantages, inconvénients & comparatif des 5 leaders](/cms-headless-avantages-inconvenients-comparatif-des-5-leaders)
 
 ## APIs et Functions as a Service
 
@@ -65,7 +65,7 @@ Toutes les interactions dynamiques côté client se font à l'aide de Javascript
 - Un site statique n'a pas besoin d'être sécurisé, il l'est par défaut. Il n'a pas besoin d'être optimisé, le temps de chargement d'un site statique est largement moindre que celui d'un site dynamique (à site comparable).
 - La base de donnée n'a pas besoin d'être finetuné, nettoyée ou optimisée.
 - Il n'est pas nécessaire de passer des heures à configurer des plugins de cache qui poseront des problèmes d'invalidations du cache. Il n'est pas non plus nécessaire d'installer Redis ou Varnish pour accélérer le temps de chargement.
-- Il faut toutefois continuer à optimiser les images mais les plugins de générateur comme [Gatsby](/posts/gatsby-le-generateur-de-site-statique-base-sur-react-et-graphql/) et les API des CMS headless comme [Contentful](https://www.contentful.com/developers/docs/references/images-api/) rendent la tâche tellement plus simple et plus élégante.
+- Il faut toutefois continuer à optimiser les images mais les plugins de générateur comme [Gatsby](/gatsby-le-generateur-de-site-statique-base-sur-react-et-graphql) et les API des CMS headless comme [Contentful](https://www.contentful.com/developers/docs/references/images-api/) rendent la tâche tellement plus simple et plus élégante.
 - Il n'y a pas se configuration de VHOST, d'ajout de directives, de configuration de SSL, si vous hébergez chez Netlify par exemple votre site est HTTPSisé HTTP2isé et CDNisé par défaut. Et l'hébergement est gratuit. Bien que j'héberge plusieurs sites chez Netlify, je ne saurais même pas vous dire si c'est Apache, NGINX ou nodejs qui sert les fichiers. On enlève la partie Devops du dévelopeur web Fullstack qui peut maintenant se reconcentrer sur la partie front. Il reste bien sûr possible de faire des redirections ou de l'authentification HTTP Basic à l'aide de fichiers de configuration toml par exemple.
 
 ![Exemple de workflow de l'agence web New Yorkaise Carrot Creative](./workflow-contentful-static.png) 

@@ -10,7 +10,7 @@ import PostTemplate from "../components/PostTemplate";
 import Related from "../components/Related";
 
 const Container = styled(Boxed)`
-  max-width: var(--page-container-s);
+  max-width: var(--page-container-m);
 `;
 
 const BlogPostTemplate = ({ data, pageContext }) => {

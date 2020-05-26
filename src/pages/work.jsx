@@ -153,8 +153,10 @@ export const pageQuery = graphql`
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        fileAbsolutePath: { regex: "/work/" }
-        frontmatter: { draft: { ne: true } }
+        frontmatter: { 
+          draft: { ne: true }, 
+          posttype: { eq: "work" } 
+        }
       }
     ) {
       edges {

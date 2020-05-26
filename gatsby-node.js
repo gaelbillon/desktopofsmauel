@@ -38,7 +38,18 @@ exports.onCreateNode = ({ node, actions }) => {
 
 const query = ` 
 {
-  work: allMdx(filter: {fileAbsolutePath: {regex: "/work/"}, frontmatter: {draft: {ne: true}}}, sort: { order: DESC,fields: frontmatter___date}) {
+  work: allMdx(
+    filter: {
+      frontmatter: { 
+        draft: { ne: true }, 
+        posttype: { eq: "work" } 
+      }
+    }, 
+    sort: { 
+      order: DESC,fields: frontmatter___date
+    }
+  ) 
+  {
     edges {
       node {
         id

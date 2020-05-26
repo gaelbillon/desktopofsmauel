@@ -51,7 +51,7 @@ const BlogPage = ({ data }) => {
     <Layout
       title="Design Blog"
       description="Hi! My name is Gaël. I write about web development, photogrammetry and drones."
-      keywords="Webdev,Blog,Web,Mibile Apps,UI,UX, Drone, Photogrammetry"
+      keywords="Webdev,Blog,Web,Mobile Apps,UI,UX, Drone, Photogrammetry"
     >
       <Row>
         <Box>

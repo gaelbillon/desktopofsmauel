@@ -13,9 +13,13 @@ const Container = styled.main`
   }
 `;
 
-const CommentoContainer = styled.main`
-  margin-top: 100px;
+const CommentoContainer = styled.div`
+  margin-top: var(--padding-xl);
 `;
+
+// const CommentoContainer = styled.main`
+//   margin-top: 100px;
+// `;
 
 class PostTemplate extends React.Component {
   render() {

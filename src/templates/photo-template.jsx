@@ -15,7 +15,7 @@ const Cover = styled(Img)`
 `;
 
 const PhotoLayout = styled.div`
-  max-width: 90vh;
+  max-width: var(--page-container-m);
   margin: 0 auto;
 
   @media screen and (max-width: 1024px) {

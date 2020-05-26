@@ -11,7 +11,7 @@ cover: "./Transmit-1.jpg"
 draft: false
 ---
 
-On vu dans [cet article](/posts/configurer-un-serveur-ubuntu-en-10-min-avec-amazon-ec2-et-en-plus-cest-gratuit/ "Configurer gratuitement un serveur ubuntu en 10 min avec amazon EC2") comment se connecter en ssh à une instance EC2. Mais pour uploader/modifier des fichiers sur notre serveur, c'est quand même plus agréable en sftp (Secure FTP).
+On vu dans [cet article](/configurer-un-serveur-ubuntu-en-10-min-avec-amazon-ec2-et-en-plus-cest-gratuit/ "Configurer gratuitement un serveur ubuntu en 10 min avec amazon EC2") comment se connecter en ssh à une instance EC2. Mais pour uploader/modifier des fichiers sur notre serveur, c'est quand même plus agréable en sftp (Secure FTP).
 
 Si vous préferez uploader des fichier avec scp, c'est comme ça : 
 ```bash
@@ -22,6 +22,6 @@ On va avoir besoin du certificat (fichier .pem) qui permet de se connecter en ss
 
 Si le dossier .ssh n'existe pas, il faut le créer `mkdir ~/.ssh`
 
-On ouvre ensuite transmit, puis on crée un nouveau favori [![connect sftp ec2 transmit](./Screen-shot-2013-05-10-at-3.20.11-PM.png)](/posts/wp-content/uploads/2013/05/Screen-shot-2013-05-10-at-3.20.11-PM.png) Dans "serveur" on met l’adresse de notre instance ec2. Pour le nom d'utilisateur, ubuntu. Et rien pour le mot de passe, transmit va chercher tout seul les fichiers qui se trouvent dans .ssh, on aurait aussi pu cliquer sur la clé dans transmit et selectionner le certificat, on est donc pas obligé de deplacer le certificat dans .ssh mais c’est un bon endroit pour le ranger.
+On ouvre ensuite transmit, puis on crée un nouveau favori [connect sftp ec2 transmit](./Screen-shot-2013-05-10-at-3.20.11-PM.png) Dans "serveur" on met l’adresse de notre instance ec2. Pour le nom d'utilisateur, ubuntu. Et rien pour le mot de passe, transmit va chercher tout seul les fichiers qui se trouvent dans .ssh, on aurait aussi pu cliquer sur la clé dans transmit et selectionner le certificat, on est donc pas obligé de deplacer le certificat dans .ssh mais c’est un bon endroit pour le ranger.
 
-Ca y’est on peut se connecter et uploader ! [![connect sftp ec2 transmit](./Screen-shot-2013-05-11-at-7.15.26-PM.png)](/posts/wp-content/uploads/2013/05/Screen-shot-2013-05-11-at-7.15.26-PM.png)
+Ca y’est on peut se connecter et uploader ! [connect sftp ec2 transmit](./Screen-shot-2013-05-11-at-7.15.26-PM.png)
