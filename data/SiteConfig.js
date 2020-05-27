@@ -22,7 +22,7 @@ const config = {
   userName: "Gaël Billon", // Username to display in the author segment.
   userTwitter: "@desktopofsamuel", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Hong Kong", // User location to display in the author segment.
-  userAvatar: "/photo.jpg", // User avatar to display in the author segment.
+  userAvatar: "/images/Profile.jpg", // User avatar to display in the author segment.
   userDescription:
     "I'm Samuel, I'm a Hong Kong based UI/UX Designer. User Interface Design, User Experience Design, Product Design, Design Thinking, Product Development, Brand Design - A personal design portfolio, also journal for designers' side-projects.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
