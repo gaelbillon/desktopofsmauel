@@ -131,7 +131,8 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  transition: var(--transition)
+  transition: var(--transition);
+  word-break: break-all; /* Prevents horizontal overflow on small screens. */
 }
 
 a:hover {
@@ -313,3 +314,18 @@ figure {
 .no-margin {
   margin: 0;
 }
+
+/* Prevents horizontal overflow on small screens. */
+pre[class*="language-"] {
+  white-space: pre-wrap;
+}
+
+code {
+	white-space: pre-wrap !important;
+	word-break: break-word !important;
+}
+
+a {
+    word-break: break-all;
+}
+/* End : prevents horizontal overflow on small screens. */
