@@ -53,13 +53,13 @@ const IndexHero = () => {
         <IntroWrapper>
           <Subtitle>
             I am a{" "}
-            <Link to="/#experience-designer">web consultant</Link>,{" "}
+            <Link to="/#web-developer">web developer</Link>,{" "}
             <Link to="/#blog">blogger</Link> and{" "}
             <Link to="/#photography">photographer</Link>.
           </Subtitle>
           <Subtitle>
             I worked as a Proxy Product Owner at Schneider Electric. 
-            Before that, I co-founded Escadrone, a drone pilot training 
+            Before that, I co-founded Escadrone, a UAV pilot training 
             center. I'm now freelancing.
           </Subtitle>
         </IntroWrapper>

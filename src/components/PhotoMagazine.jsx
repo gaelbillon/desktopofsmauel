@@ -126,8 +126,8 @@ class PhotoMagazine extends React.Component {
           <GridHeading>On Photography</GridHeading>
           <GridSeparator />
           <p>
-            On my free time, if I ever happen to be alone, I like taking pictures, 
-            with real lenses. And with a drone. I then spend way too much time 
+            On my free time, if I ever happen to be alone. I like taking pictures, 
+            with genuine lenses. And with a drone. I then spend way too much time 
             sorting, editing and adjusting hundreds of files. More photos on my{" "}
             <a href="http://www.instagram.com/desktopofsamuel">Instagram</a>{" "}
             and <a href="https://www.flickr.com/photos/96191978@N08/">Flickr</a>

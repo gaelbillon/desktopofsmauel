@@ -133,7 +133,7 @@ class NavBar extends React.Component {
               <Title to="/" className="noeffect">
                 Gaël B.
               </Title>
-              <Description>Web consultant</Description>
+              <Description>Web developer</Description>
             </NavLeft>
             <NavRight>
               <NavItem

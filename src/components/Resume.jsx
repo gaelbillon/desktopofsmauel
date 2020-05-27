@@ -70,7 +70,7 @@ const Resume = () => {
         <ResumeSectionTitle>Career</ResumeSectionTitle>
         <ResumeSection>
           <ResumeItem
-            title="Freelance web consultant"
+            title="Freelance web developer"
             meta="2018 - Now"
           />
           <ResumeItem

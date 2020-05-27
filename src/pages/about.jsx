@@ -199,13 +199,13 @@ const AboutPage = ({ data }) => {
               <small>Hi! My name is Gaël.</small>
               <p>
                 Hi, I’m Gaël, born and raised in the world wide web. Web developper 
-                since 1998, Business Analyst, Mobile web apps developer Search 
-                optimizer & webmarketing specialist, Webperformance activist, 
-                User experience & customer satisfaction zealot.<br />
+                since 1998, business analyst, mobile web apps developer, search 
+                optimizer & webmarketing specialist, webperformance activist, 
+                user experience & customer satisfaction zealot.<br />
                 <br />
                 I like designing web applications, increasing pageviews and 
-                crafting a perfect user experience from Search Engine Result 
-                Page to after sale customer service.
+                crafting a perfect user experience from search engine result 
+                pages to after sale customer service.
               </p>
               <WrapperNav>
                 <Link to="#bio">
@@ -226,11 +226,12 @@ const AboutPage = ({ data }) => {
         <Boxed>
           <P1>
             <small>01. Bio</small>
-            <h2 className="no-margin">Journey to Web development</h2>
+            <h2 className="no-margin">Journey to web development</h2>
             <p>
-              Having a computer at home since I whas a child, I quickly began 
-              poking at it. I never liked school too much. After high school, 
-              I taught myself some web development and started freelancing. 
+              Having a computer at home since I whas a kid, I quickly began 
+              poking at it. I did not enjoy compulsory education too much. 
+              After high school, I taught myself some web development 
+              and started freelancing. 
             </p>
           </P1>
           <PhotoFrame>
@@ -244,10 +245,10 @@ const AboutPage = ({ data }) => {
             <P2>
               <p>
                 In 2004 I co-founded a company (escadrone.com) with a friend 
-                for a few years and in 2017 got back before to web design at 
-                Schneider Electric as a Business Analyst.
+                for the next 3 years years and in 2017 got back before to web 
+                application and UX design at Schneider Electric as a Business Analyst.
                 <br />
-                <br />I'm now working as a freelance web consultant.
+                <br />I'm now working as a freelance web developer.
                 <br />
                 <br />
                 {/* Currently, I work as the Principal Designer at Hyperair, a
@@ -274,7 +275,7 @@ const AboutPage = ({ data }) => {
             </DesignPart>
             <DesignContent>
               <p>
-                I've always be interested in web development.
+                I've always been interested in web development.
                 Since I built my first website in 1998, I never stopped learning.{" "}
               </p>
               <SkillList>
@@ -293,7 +294,7 @@ const AboutPage = ({ data }) => {
             </PassionPart>
             <PassionContent>
               <p>
-                Although I like spending my off time in front of a computer
+                Although I like spending my spare time in front of a computer
                 I am fortunate enough to have occupations that require going outside.
               </p>
               <SkillList>

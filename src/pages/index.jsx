@@ -194,17 +194,17 @@ const IndexPage = ({ data }) => {
       <Row>
         <IndexHero />
       </Row>
-      <GreyRow className="full-bleed" id="experience-designer">
+      <GreyRow className="full-bleed" id="web-developer">
         <Box>
           <ColumnSpaced>
             <StickyBox>
               <StickyWrapper>
                 <small>01.</small>
-                <h2 className="no-margin">Web developer and marketer</h2>
+                <h2 className="no-margin">I do web development and content marketing</h2>
 
                 <p>
                   I'm a multi-disciplinary developer with 10 years of experience
-                  in delivering apps &  websites that user wants to use.
+                  in delivering apps &  websites that users wants to use.
                 </p>
                 <ReadOn text="View My Work" href="/work" />
               </StickyWrapper>
@@ -241,7 +241,7 @@ const IndexPage = ({ data }) => {
             <h6>03.</h6>
             <h2>Photography</h2>
             <Subtitle>
-              Photos of places I've been to.
+              What made the cut, out of the thousands of photos I've taken over the years.
             </Subtitle>
             <ReadOn text="More Photos" href="/photo" />
           </PhotoIntro>
@@ -263,7 +263,8 @@ export const pageQuery = graphql`
       filter: {
         frontmatter: { 
           draft: { ne: true }, 
-          posttype: { eq: "work" } 
+          posttype: { eq: "work" },
+          featured: { eq: true }
         }
       }
     ) {
