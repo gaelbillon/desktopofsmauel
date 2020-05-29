@@ -46,7 +46,7 @@ const IndexHero = () => {
   return (
     <Container>
       <Image>
-        <img src={Profile} alt="Samuel W." />
+        <img src={Profile} alt="Gaël B" />
       </Image>
       <Title>Gaël B.</Title>
       <Column>
