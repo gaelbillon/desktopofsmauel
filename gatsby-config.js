@@ -60,6 +60,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "photogrammetry",
+        path: `${__dirname}/content/photogrammetry/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "images",
         path: `${__dirname}/static/images/`,
       },

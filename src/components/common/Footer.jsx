@@ -206,6 +206,9 @@ const Footer = () => {
             <FooterItem className="noeffect" to="/photo">
               Photo
             </FooterItem>
+            <FooterItem className="noeffect" to="/photogrammetry">
+              Photogrammetry
+            </FooterItem>
           </LinkContainer>
           <CreditContainer>
             <CreditText>

@@ -87,18 +87,43 @@ const query = `
       }
     }
   }
+  photogrammetry: allMdx(
+    filter: {
+      fileAbsolutePath: {regex: "/photogrammetry/"}, 
+      frontmatter: {
+        draft: {
+          ne: true
+        }
+      }
+    }, 
+    sort: { 
+      order: DESC,fields: frontmatter___date
+    }
+  ) 
+  {
+    edges {
+      node {
+        id
+        frontmatter {
+          path
+          date
+        }
+      }
+    }
+  }
 }
 `;
 const postPage = path.resolve("src/templates/blog-template.jsx");
 const workPage = path.resolve("src/templates/work-template.jsx");
 const photoPage = path.resolve("src/templates/photo-template.jsx");
+// const photogrammetryPage = path.resolve("src/templates/photogrammetry-template.jsx");
 const tagPage = path.resolve("src/templates/tag-template.jsx");
 const categoryPage = path.resolve("src/templates/category-template.jsx");
 
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
   const response = await graphql(query);
   if (response.errors) throw new Error(response.errors);
-  const { work, blog, photo } = response.data;
+  const { work, blog, photo, photogrammetry } = response.data;
 
   photo.edges.forEach(({ node }, index, arr) => {
     const nextSlug = index === 0 ? `` : arr[index - 1].node.frontmatter.path;
@@ -187,6 +212,24 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       },
     });
   });
+
+  // photogrammetry.edges.forEach(({ node }, index, arr) => {
+  //   const nextSlug = index === 0 ? `` : arr[index - 1].node.frontmatter.path;
+  //   const prevSlug =
+  //     index === arr.length - 1 ? `` : arr[index + 1].node.frontmatter.path;
+  //   const slug = node.frontmatter.path;
+  //   createPage({
+  //     path: `/photogrammetry${slug}`,
+  //     component: photogrammetryPage,
+  //     context: {
+  //       slug,
+  //       nextSlug,
+  //       prevSlug,
+  //       id: node.id,
+  //     },
+  //   });
+  // });
+
 };
 
 exports.onCreateWebpackConfig = ({ actions }) => {

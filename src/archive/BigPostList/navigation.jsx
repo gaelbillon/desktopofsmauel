@@ -121,6 +121,9 @@ export default class Navigation extends React.Component {
               <Link to="/photo" class="navblock noeffect">
                 <small>Photo</small>
               </Link>
+              <Link to="/photogrammetry" class="navblock noeffect">
+                <small>Photogrammetry</small>
+              </Link>
             </NavItem>
           </NavBar>
         </Main>

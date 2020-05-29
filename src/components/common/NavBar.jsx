@@ -164,6 +164,13 @@ class NavBar extends React.Component {
               >
                 <small>Photo</small>
               </NavItem>
+              <NavItem
+                activeClassName="nav-item-active"
+                className="noeffect"
+                to="/photogrammetry"
+              >
+                <small>Photogrammetry</small>
+              </NavItem>
               <NavItemIcon onClick={this.openModal} className="noeffect">
                 <MenuIcon icon={faBars} size="lg" />
               </NavItemIcon>
