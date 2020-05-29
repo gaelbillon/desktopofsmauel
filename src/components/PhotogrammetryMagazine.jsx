@@ -141,7 +141,7 @@ class PhotogrammetryMagazine extends React.Component {
           {/* <GridHeading>On Photogrammetry</GridHeading> 
           <GridSeparator /> */}
           <p>
-            Photogrammetry softwares are incredible. They can turn a bunch of picutres
+            Photogrammetry softwares are incredible. They can turn a bunch of pictures
             into a 3D model. Although I do that only for fun, photogrammetry is used by 
             surveyors, architects, civil engineers, disaster relief coordinators, video game
             creators, cinema and in a lot of other fields. Pictures can be taken from the 
@@ -149,7 +149,7 @@ class PhotogrammetryMagazine extends React.Component {
             RTK GPS (like a standard GPS but with centimeter accuracy) and with LiDAR 
             (like a laser rangefinder but rotating on 360° and capturing hundreds of thousands 
             of points per second). Measurement can subsequently be taken with great 
-            precision. Browse more 3D models on my{" "}
+            precision. But to get started, a smartphone is more than enough. Browse more 3D models on my{" "}
             <a href="https://sketchfab.com/gael.billon">Sketchfab</a>{" "}
             page.
           </p>
