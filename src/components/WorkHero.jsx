@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react"; // import React, { Component } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
-import ReadOn from "elements/ReadOn";
+// import ReadOn from "elements/ReadOn";
 
 const Grid = styled.section``;
 

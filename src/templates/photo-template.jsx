@@ -7,6 +7,7 @@ import Img from "gatsby-image";
 import Helmet from "react-helmet";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
+import Commento from "../components/Commento";
 
 const Cover = styled(Img)`
   width: 100%;
@@ -77,6 +78,10 @@ const MDX = styled(MDXRenderer)`
   }
 `;
 
+const CommentoContainer = styled.div`
+  margin-top: var(--padding-xl);
+`;
+
 export default class PhotoPageTemplate extends React.Component {
   render() {
     const { slug } = this.props.pageContext;
@@ -104,6 +109,9 @@ export default class PhotoPageTemplate extends React.Component {
 
           <MDX>{photoNode.body}</MDX>
         </PhotoLayout>
+        <CommentoContainer>
+          <Commento />
+        </CommentoContainer>
       </Layout>
     );
   }

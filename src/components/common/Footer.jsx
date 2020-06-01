@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React from "react"; // import React, { Component } from "react";
 import styled from "styled-components";
 import Boxed from "elements/Boxed";
-import Column from "elements/Column";
+// import Column from "elements/Column";
 import FooterContact from "./FooterContact";
-import social from "../../../static/SVG/social_media.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faInstagram,
-  faMedium,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { faCube } from "@fortawesome/free-solid-svg-icons";
+// import social from "../../../static/SVG/social_media.svg";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faTwitter,
+//   faInstagram,
+//   faMedium,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons";
+// import { faCube } from "@fortawesome/free-solid-svg-icons";
 import Link from "./GatsbyLink";
 
 const Container = styled.footer`
@@ -23,20 +23,20 @@ const Row = styled.section`
   padding: var(--var-padding-s) 1rem;
 `;
 
-const BgRow = styled(Row)`
-  @media only screen and (max-width: 767px) {
-    padding: var(--var-padding-m);
-    background-color: var(--color-white-500);
-    box-shadow: 0 10px 0 -5px var(--color-white-700);
-    margin: 24px;
-  }
-`;
+// const BgRow = styled(Row)`
+//   @media only screen and (max-width: 767px) {
+//     padding: var(--var-padding-m);
+//     background-color: var(--color-white-500);
+//     box-shadow: 0 10px 0 -5px var(--color-white-700);
+//     margin: 24px;
+//   }
+// `;
 
-const BoxNow = styled(Boxed)``;
+// const BoxNow = styled(Boxed)``;
 
-const FooterGrid = styled.div`
-  display: block;
-`;
+// const FooterGrid = styled.div`
+//   display: block;
+// `;
 
 const FooterItem = styled(Link)`
   display: flex;
@@ -70,32 +70,32 @@ const FooterItem = styled(Link)`
   }
 `;
 
-const IconList = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
+// const IconList = styled.div`
+//   display: flex;
+//   flex-direction: row;
+// `;
 
-const FooterIcon = styled(FontAwesomeIcon)`
-  margin-right: 1rem;
-  font-size: 24px;
-  border-bottom: none;
-`;
+// const FooterIcon = styled(FontAwesomeIcon)`
+//   margin-right: 1rem;
+//   font-size: 24px;
+//   border-bottom: none;
+// `;
 
-const ImageWrapper = styled.div`
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-`;
+// const ImageWrapper = styled.div`
+//   @media only screen and (max-width: 768px) {
+//     display: none;
+//   }
+// `;
 
-const Heading = styled.small`
-  color: var(--color-secondary-500);
-  font-weight: var(--font-weight-bold);
-`;
+// const Heading = styled.small`
+//   color: var(--color-secondary-500);
+//   font-weight: var(--font-weight-bold);
+// `;
 
-const Paragraph = styled.p`
-  font-size: 1.25rem;
-  max-width: 40ch;
-`;
+// const Paragraph = styled.p`
+//   font-size: 1.25rem;
+//   max-width: 40ch;
+// `;
 
 const CreditText = styled.p`
   font-family: var(--font-secondary);
@@ -104,10 +104,10 @@ const CreditText = styled.p`
   color: var(--color-secondary-500);
 `;
 
-const SubContainer = styled.div`
-  padding: var(--var-padding-l) 0rem;
-  background: var(--color-white-300);
-`;
+// const SubContainer = styled.div`
+//   padding: var(--var-padding-l) 0rem;
+//   background: var(--color-white-300);
+// `;
 
 const LinkContainer = styled.div`
   margin-top: 2rem;

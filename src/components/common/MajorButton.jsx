@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Link from "../common/GatsbyLink";
 import styled from "styled-components";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 const Wrapper = styled.button`
   border: 1px solid var(--color-brand-500);

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react"; // import React, { Component } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
-import PageTitle from "elements/PageTitle";
+// import PageTitle from "elements/PageTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -53,17 +53,17 @@ const PhotogrametryProjectPhoto = styled.div`
   z-index: 2;
 `;
 
-const GridHeading = styled.h3`
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-l);
-`;
+// const GridHeading = styled.h3`
+//   font-weight: var(--font-weight-bold);
+//   font-size: var(--font-size-l);
+// `;
 
-const GridSeparator = styled.div`
-  display: block;
-  border-right: 1px solid var(--color-grey-300);
-  width: 0rem;
-  height: 2rem;
-`;
+// const GridSeparator = styled.div`
+//   display: block;
+//   border-right: 1px solid var(--color-grey-300);
+//   width: 0rem;
+//   height: 2rem;
+// `;
 
 const GridPhotogrammetry = styled(Img)`
   margin-bottom: 0.5rem;

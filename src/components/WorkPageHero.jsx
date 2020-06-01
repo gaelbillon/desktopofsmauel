@@ -9,7 +9,7 @@ const Section = styled.div`
   padding: var(--padding-m) var(--padding-m) 0 var(--padding-m);
 `;
 
-const Container = styled(Boxed)``;
+// const Container = styled(Boxed)``;
 
 const Subtitle = styled.h6`
   color: var(--color-white-500);

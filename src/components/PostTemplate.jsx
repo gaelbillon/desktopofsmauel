@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
+import React from "react"; // import React, { Component } from "react";
+// import { Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import styled from "styled-components";
 import Img from "gatsby-image";
 import Commento from "./Commento";

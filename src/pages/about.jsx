@@ -111,11 +111,11 @@ const SkillList = styled.ul`
   }
 `;
 
-const GridProject = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 1rem;
-`;
+// const GridProject = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+//   grid-gap: 1rem;
+// `;
 
 const PassionPart = styled.div`
   h3 {
@@ -124,62 +124,62 @@ const PassionPart = styled.div`
 `;
 const PassionContent = styled.div``;
 
-const ProjectWrapper = styled.div`
-  background: var(--color-white-700);
-  align-content: space-between;
-  padding: 2rem;
-  display: flex;
-  flex-flow: column;
-  transition: transform 0.2s ease-in, box-shadow 0.3s ease-in-out;
+// const ProjectWrapper = styled.div`
+//   background: var(--color-white-700);
+//   align-content: space-between;
+//   padding: 2rem;
+//   display: flex;
+//   flex-flow: column;
+//   transition: transform 0.2s ease-in, box-shadow 0.3s ease-in-out;
 
-  &:hover {
-    transform: scale(1.025, 1.025);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  }
-`;
+//   &:hover {
+//     transform: scale(1.025, 1.025);
+//     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+//   }
+// `;
 
-const ProjectContent = styled.div``;
+// const ProjectContent = styled.div``;
 
-const ProjectBottom = styled.div`
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  justify-self: flex-end;
-`;
+// const ProjectBottom = styled.div`
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-between;
+//   justify-self: flex-end;
+// `;
 
-const ProjectIcon = styled.div`
-  margin-bottom: 2rem;
-`;
+// const ProjectIcon = styled.div`
+//   margin-bottom: 2rem;
+// `;
 
-const ProjectTitle = styled.h3``;
+// const ProjectTitle = styled.h3``;
 
-const ProjectBlurb = styled.p`
-  font-size: 0.975rem;
-`;
+// const ProjectBlurb = styled.p`
+//   font-size: 0.975rem;
+// `;
 
-const ProjectYear = styled.small`
-  margin-bottom: 0;
-`;
+// const ProjectYear = styled.small`
+//   margin-bottom: 0;
+// `;
 
-const ProjectLink = styled(Link)``;
+// const ProjectLink = styled(Link)``;
 
-const ProjectBox = ({ img, title, blurb, year, url }) => (
-  <ProjectWrapper>
-    <ProjectIcon>
-      <img src={img} alt={title} width="50px" />
-    </ProjectIcon>
-    <ProjectContent>
-      <ProjectTitle>{title}</ProjectTitle>
-      <ProjectBlurb>{blurb}</ProjectBlurb>
-    </ProjectContent>
-    <ProjectBottom>
-      <ProjectYear>{year}</ProjectYear>
-      <ProjectLink className="noeffect" to={url} target="blank">
-        ↗
-      </ProjectLink>
-    </ProjectBottom>
-  </ProjectWrapper>
-);
+// const ProjectBox = ({ img, title, blurb, year, url }) => (
+//   <ProjectWrapper>
+//     <ProjectIcon>
+//       <img src={img} alt={title} width="50px" />
+//     </ProjectIcon>
+//     <ProjectContent>
+//       <ProjectTitle>{title}</ProjectTitle>
+//       <ProjectBlurb>{blurb}</ProjectBlurb>
+//     </ProjectContent>
+//     <ProjectBottom>
+//       <ProjectYear>{year}</ProjectYear>
+//       <ProjectLink className="noeffect" to={url} target="blank">
+//         ↗
+//       </ProjectLink>
+//     </ProjectBottom>
+//   </ProjectWrapper>
+// );
 
 const AboutPage = ({ data }) => {
   return (

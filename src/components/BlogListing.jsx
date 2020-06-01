@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react"; // import React, { Component } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
-import ReadOn from "elements/ReadOn";
+// import ReadOn from "elements/ReadOn";
 
 const Block = styled.div`
   border-radius: 4px;
@@ -63,18 +63,18 @@ const PostListImage = styled(Img)`
   transition: transform 0.2s ease-in, box-shadow 0.3s ease-in-out;
 `;
 
-const Button = styled(Link)`
-  margin: 0;
-  background: none;
-  border: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.075em;
-  cursor: pointer;
-  display: inline;
-  border-bottom: none;
-  justify-self: flex-end;
-`;
+// const Button = styled(Link)`
+//   margin: 0;
+//   background: none;
+//   border: none;
+//   text-transform: uppercase;
+//   font-weight: 400;
+//   letter-spacing: 0.075em;
+//   cursor: pointer;
+//   display: inline;
+//   border-bottom: none;
+//   justify-self: flex-end;
+// `;
 
 const Paragraph = styled.p`
   font-size: 0.95rem;

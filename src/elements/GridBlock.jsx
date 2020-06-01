@@ -16,7 +16,7 @@ const Grid = styled.div`
 const StyledGridCaption = styled.figcaption`
   font-family: var(--font-secondary);
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding: 0.25em 0;
   color: var(--color-black-500);
 `;

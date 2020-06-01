@@ -1,20 +1,20 @@
 import React from "react";
-import Helmet from "react-helmet";
+// import Helmet from "react-helmet";
 import styled from "styled-components";
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import Boxed from "elements/Boxed";
 import Column from "elements/Column";
 import ReadOn from "elements/ReadOn";
-import Link from "../components/common/GatsbyLink";
-import config from "../../data/SiteConfig";
+// import Link from "../components/common/GatsbyLink";
+// import config from "../../data/SiteConfig";
 import Layout from "../layout";
 import WorkIndex from "../components/WorkIndex";
-import CTAButton from "../components/common/MajorButton";
+// import CTAButton from "../components/common/MajorButton";
 import BlogListing from "../components/BlogListing";
-import WorkIcon from "../../static/SVG/Work.svg";
-import BlogIcon from "../../static/SVG/Blog.svg";
-import Now from "../components/Now";
+// import WorkIcon from "../../static/SVG/Work.svg";
+// import BlogIcon from "../../static/SVG/Blog.svg";
+// import Now from "../components/Now";
 // import Profile from "../../static/images/Profile.webp";
 import IndexHero from "../components/IndexHero";
 import IndexPhoto from "../components/IndexPhoto";
@@ -28,18 +28,18 @@ const Row = styled.section`
   background: white;
 `;
 
-const More2Button = styled.button`
-  box-sizing: border-box;
-  background: none;
-  padding: 1rem 2rem;
-  border: 0;
-  margin: 0 auto;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background: var(--color-brand-500);
-    color: var(--color-black-500);
-  }
-`;
+// const More2Button = styled.button`
+//   box-sizing: border-box;
+//   background: none;
+//   padding: 1rem 2rem;
+//   border: 0;
+//   margin: 0 auto;
+//   transition: all 0.3s ease-in-out;
+//   &:hover {
+//     background: var(--color-brand-500);
+//     color: var(--color-black-500);
+//   }
+// `;
 
 const ColumnSpaced = styled(Column)`
   grid-gap: 3rem;
@@ -53,19 +53,20 @@ const GreyRow = styled(Row)`
   background: var(--color-white-300);
 `;
 
-const ContactButton = styled.button`
-  border: none;
-  box-sizing: border-box;
-  background: none;
-  padding: 1rem 2rem;
-  transition: all 0.3s ease-in-out;
-  margin: 0 auto;
+// const ContactButton = styled.button`
+//   border: none;
+//   box-sizing: border-box;
+//   background: none;
+//   padding: 1rem 2rem;
+//   transition: all 0.3s ease-in-out;
+//   margin: 0 auto;
 
-  &:hover {
-    background: var(--color-brand-500);
-    color: var(--color-black-500);
-  }
-`;
+//   &:hover {
+//     background: var(--color-brand-500);
+//     color: var(--color-black-500);
+//   }
+// `;
+
 const StickyBox = styled.div`
   height: 100%;
 `;
@@ -86,11 +87,11 @@ const StickyWrapper = styled.div`
   }
 `;
 
-const AboutIcon = styled.div`
-  justify-self: flex-end;
-`;
+// const AboutIcon = styled.div`
+//   justify-self: flex-end;
+// `;
 
-const HalfBox = styled.div``;
+// const HalfBox = styled.div``;
 
 // const ProfileImage = styled.div`
 //   width: 100%;
@@ -106,12 +107,12 @@ const Subtitle = styled.p`
   font-weight: 500;
 `;
 
-const Center = styled.div`
-  display: flex;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-`;
+// const Center = styled.div`
+//   display: flex;
+//   width: 100%;
+//   align-items: center;
+//   text-align: center;
+// `;
 
 const Blog = styled.section`
   display: grid;
@@ -135,14 +136,14 @@ const Blog = styled.section`
   }
 `;
 
-const Overlay = styled.div`
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 10%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  z-index: 1000;
-`;
+// const Overlay = styled.div`
+//   position: absolute;
+//   right: 0;
+//   height: 100%;
+//   width: 10%;
+//   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+//   z-index: 1000;
+// `;
 
 const BlogIntro = styled.div`
   margin-bottom: var(--var-padding-m);
@@ -151,17 +152,17 @@ const BlogIntro = styled.div`
   }
 `;
 
-const Contact = styled.div`
-  display: inline-block;
+// const Contact = styled.div`
+//   display: inline-block;
 
-  small {
-    font-family: var(--font-secondary);
-  }
+//   small {
+//     font-family: var(--font-secondary);
+//   }
 
-  h2 {
-    color: var(--color-secondary-700);
-  }
-`;
+//   h2 {
+//     color: var(--color-secondary-700);
+//   }
+// `;
 
 const PhotoGrid = styled.div`
   display: grid;

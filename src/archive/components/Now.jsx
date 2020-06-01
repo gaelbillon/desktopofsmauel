@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import styled from "styled-components";
-import Boxed from "elements/Boxed";
+// import Boxed from "elements/Boxed";
 
 const NowGrid = styled.section`
   height: auto;
@@ -44,7 +44,7 @@ const Name = styled.h4`
 
 const Content = styled.div``;
 
-const Title = styled.h4``;
+// const Title = styled.h4``;
 
 const Text = styled.p`
   font-family: var(--font-secondary);

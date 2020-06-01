@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react"; // import React, { Component } from "react";
 import Link from "./GatsbyLink";
 import styled from "styled-components";
 import "../../layout/index.css";

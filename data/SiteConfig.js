@@ -2,8 +2,7 @@ const config = {
   siteTitle: "Gaël Billon | Développeur web à Grenoble", // Site title.
   siteTitleShort: "Gaël Billon", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Gaël Billon | Développeur web à Grenoble", // Alternative site title for SEO.
-  siteLogo:
-    "/photo.jpg", // Logo used for SEO and manifest.
+  siteLogo: "/images/Profile.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://gaelbillon.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription:
@@ -13,18 +12,18 @@ const config = {
   siteRss: "/rss.xml", // Path to the RSS file.
   siteRssTitle: "Gaël Billon | Développeur web à Grenoble", // Title of the RSS feed
   siteFBAppID: "", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-18519226-7", // GA tracking ID.
+  // googleAnalyticsID: "UA-18519226-7", // GA tracking ID.
   disqusShortname: "", // Disqus shortname.
   postDefaultCategoryID: "Technology", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "MMM DD, YYYY",
   locale: "en", // Date format for display.
   userName: "Gaël Billon", // Username to display in the author segment.
-  userTwitter: "@desktopofsamuel", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "Hong Kong", // User location to display in the author segment.
+  userTwitter: "@gaelbillon", // Optionally renders "Follow Me" in the UserInfo segment.
+  userLocation: "Grenoble", // User location to display in the author segment.
   userAvatar: "/images/Profile.jpg", // User avatar to display in the author segment.
   userDescription:
-    "I'm Samuel, I'm a Hong Kong based UI/UX Designer. User Interface Design, User Experience Design, Product Design, Design Thinking, Product Development, Brand Design - A personal design portfolio, also journal for designers' side-projects.", // User description to display in the author segment.
+    "👋 I’m Gaël, born and raised in the world wide web. Web developper since 1998, Business Analyst, 📱 Mobile web apps developer, Search optimizer & webmarketing specialist, ⚡️ Webperformance activist, 👤 User experience & customer satisfaction zealot", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
@@ -34,7 +33,8 @@ const config = {
     },
     {
       label: "Email",
-      url: "mailto:desktopofsamuel@gmail.com",
+      url:
+        "mailto:&#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;",
       iconClassName: "fa fa-envelope",
     },
     {

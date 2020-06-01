@@ -1,18 +1,18 @@
 import React from "react";
-import Helmet from "react-helmet";
+// import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
-import Link from "../components/common/GatsbyLink";
+// import Link from "../components/common/GatsbyLink";
 import WorkIndex from "../components/WorkIndex";
-import WaterSVG from "../../static/SVG/Water.svg";
-import BookSVG from "../../static/SVG/Book.svg";
-import HyperAirSVG from "../../static/SVG/HyperAir-2.svg";
-import PinSVG from "../../static/SVG/Pin.svg";
-import PlayaSVG from "../../static/SVG/Playa.svg";
-import PingspaceSVG from "../../static/SVG/Pingspace.svg";
+// import WaterSVG from "../../static/SVG/Water.svg";
+// import BookSVG from "../../static/SVG/Book.svg";
+// import HyperAirSVG from "../../static/SVG/HyperAir-2.svg";
+// import PinSVG from "../../static/SVG/Pin.svg";
+// import PlayaSVG from "../../static/SVG/Playa.svg";
+// import PingspaceSVG from "../../static/SVG/Pingspace.svg";
 import PageTitle from "../elements/PageTitle";
-import SEO from "../components/SEO";
-import config from "../../data/SiteConfig";
+// import SEO from "../components/SEO";
+// import config from "../../data/SiteConfig";
 import styled from "styled-components";
 import Boxed from "elements/Boxed";
 import WorkList from "../components/WorkList";
@@ -31,50 +31,50 @@ const Row = styled.section`
 const ClearRow = styled(Row)`
   padding: 0;
 `;
-const GridProject = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 1rem;
-`;
+// const GridProject = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+//   grid-gap: 1rem;
+// `;
 
-const ProjectWrapper = styled.div`
-  background: var(--color-white-700);
-  align-content: space-between;
-  padding: 2rem;
-  display: flex;
-  flex-flow: column;
-  transition: transform 0.2s ease-in, box-shadow 0.3s ease-in-out;
+// const ProjectWrapper = styled.div`
+//   background: var(--color-white-700);
+//   align-content: space-between;
+//   padding: 2rem;
+//   display: flex;
+//   flex-flow: column;
+//   transition: transform 0.2s ease-in, box-shadow 0.3s ease-in-out;
 
-  &:hover {
-    transform: scale(1.025, 1.025);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  }
-`;
+//   &:hover {
+//     transform: scale(1.025, 1.025);
+//     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+//   }
+// `;
 
-const ProjectContent = styled.div``;
+// const ProjectContent = styled.div``;
 
-const ProjectBottom = styled.div`
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  justify-self: flex-end;
-`;
+// const ProjectBottom = styled.div`
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-between;
+//   justify-self: flex-end;
+// `;
 
-const ProjectIcon = styled.div`
-  margin-bottom: 2rem;
-`;
+// const ProjectIcon = styled.div`
+//   margin-bottom: 2rem;
+// `;
 
-const ProjectTitle = styled.h3``;
+// const ProjectTitle = styled.h3``;
 
-const ProjectBlurb = styled.p`
-  font-size: 0.975rem;
-`;
+// const ProjectBlurb = styled.p`
+//   font-size: 0.975rem;
+// `;
 
-const ProjectYear = styled.small`
-  margin-bottom: 0;
-`;
+// const ProjectYear = styled.small`
+//   margin-bottom: 0;
+// `;
 
-const ProjectLink = styled(Link)``;
+// const ProjectLink = styled(Link)``;
 /* 
 const ProjectBox = props => (
   <ProjectWrapper>

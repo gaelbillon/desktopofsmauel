@@ -9,10 +9,10 @@ import SEO from "../components/SEO";
 import WorkPageHero from "../components/WorkPageHero";
 import config from "../../data/SiteConfig";
 
-const Title = styled.h1`
-  padding-top: var(--var-padding-m);
-  font-family: var(--font-primary);
-`;
+// const Title = styled.h1`
+//   padding-top: var(--var-padding-m);
+//   font-family: var(--font-primary);
+// `;
 
 const WorkWrapper = styled(Boxed)`
   max-width: 600px;

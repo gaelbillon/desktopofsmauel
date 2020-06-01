@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ReadOn from "../elements/ReadOn";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import Carousel, { Dots } from "@brainhubeu/react-carousel";
+import Carousel from "@brainhubeu/react-carousel"; // import Carousel, { Dots } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import Escadrone from "../../static/images/workshot/Escadrone-on-ipad.png";
 import Parachutedrone from "../../static/images/workshot/parachutedrone-com-on-macbook.png";
