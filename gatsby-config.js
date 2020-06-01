@@ -114,17 +114,17 @@ module.exports = {
         trackingId: config.googleAnalyticsID,
       },
     },
-    {
-      resolve: "gatsby-plugin-nprogress",
-      options: {
-        color: config.themeColor,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-nprogress",
+    //   options: {
+    //     color: config.themeColor,
+    //   },
+    // },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-twitter",
+    // "gatsby-plugin-twitter",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
@@ -149,30 +149,30 @@ module.exports = {
         tags: true
       }
     }, */
-    {
-      resolve: `gatsby-plugin-webfonts`,
-      options: {
-        fonts: {
-          google: [
-            {
-              family: "Libre Caslon Text",
-              variants: ["400", "700"],
-            },
-          ],
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-webfonts`,
+    //   options: {
+    //     fonts: {
+    //       google: [
+    //         {
+    //           family: "Libre Caslon Text",
+    //           variants: ["400", "700"],
+    //         },
+    //       ],
+    //     },
+    //   },
+    // },
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: false,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-nprogress`,
+    //   options: {
+    //     // Setting a color is optional.
+    //     color: `tomato`,
+    //     // Disable the loading spinner.
+    //     showSpinner: false,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-feed",
       options: {
