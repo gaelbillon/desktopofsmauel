@@ -81,6 +81,7 @@ export const pageQuery = graphql`
             title
             tldr
             photocount
+            camera
             polycount
             texture
             processingsoftware

@@ -119,7 +119,7 @@ export default class Navigation extends React.Component {
                 <small>Blog</small>
               </Link>
               <Link to="/photo" class="navblock noeffect">
-                <small>Photo</small>
+                <small>Photography</small>
               </Link>
               <Link to="/photogrammetry" class="navblock noeffect">
                 <small>Photogrammetry</small>

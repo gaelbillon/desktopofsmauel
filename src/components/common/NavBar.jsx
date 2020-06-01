@@ -162,7 +162,7 @@ class NavBar extends React.Component {
                 className="noeffect"
                 to="/photo"
               >
-                <small>Photo</small>
+                <small>Photography</small>
               </NavItem>
               <NavItem
                 activeClassName="nav-item-active"

@@ -122,9 +122,10 @@ class PhotogrammetryMagazine extends React.Component {
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
-        excerpt: postEdge.node.frontmatter.tldr || postEdge.node.excerpt,
+        // excerpt: postEdge.node.frontmatter.tldr || postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead,
         photocount: postEdge.node.frontmatter.photocount,
+        camera: postEdge.node.frontmatter.camera,
         polycount: postEdge.node.frontmatter.polycount,
         texture: postEdge.node.frontmatter.texture,
         processingsoftware: postEdge.node.frontmatter.processingsoftware,
@@ -169,10 +170,11 @@ class PhotogrammetryMagazine extends React.Component {
               <GridContentWrapper>
                 <PhotogrammetryProjectList>
                   <li>Number of photos: {post.photocount}</li>
+                  <li>Camera: {post.camera}</li>
                   <li>Number of polygons: {post.polycount}</li>
                   <li>Texture size: {post.texture}</li>
                   <li>Software: {post.processingsoftware}</li>
-                  {post.excerpt && <li>{post.excerpt}</li>}
+                  { /* {post.excerpt && <li>{post.excerpt}</li>} */ }
                 </PhotogrammetryProjectList>
                 <a
                   href={post.sketchfablink}
@@ -181,7 +183,7 @@ class PhotogrammetryMagazine extends React.Component {
                   rel="noopener noreferrer"
                   classname="outgoingLink"
                 >
-                  <GridButton> View Project
+                  <GridButton> View 3D model
                     <LinkIcon
                       icon={faExternalLinkAlt}
                       size="s"

@@ -60,6 +60,7 @@ const GridTitle = styled.h2`
   font-weight: var(--font-weight-bold);
   margin-top: 0;
   margin-bottom: 0;
+  word-break: break-word;
 `;
 
 const GridContentWrapper = styled.div``;
@@ -127,8 +128,9 @@ class PhotoMagazine extends React.Component {
           <GridSeparator />
           <p>
             On my free time, if I ever happen to be alone. I like taking pictures, 
-            with genuine lenses. And with a drone. I then spend way too much time 
-            sorting, editing and adjusting hundreds of files. More photos on my{" "}
+            with genuine lenses. And with a drone.
+            <br/>
+            I then spend way too much time sorting, editing and adjusting hundreds of files. More photos on my{" "}
             <a href="http://www.instagram.com/gael_billon">Instagram</a>{" "}
             and <a href="https://www.flickr.com/photos/96191978@N08/">Flickr</a>
           </p>
