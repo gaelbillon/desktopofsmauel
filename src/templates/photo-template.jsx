@@ -108,10 +108,10 @@ export default class PhotoPageTemplate extends React.Component {
           </Header>
 
           <MDX>{photoNode.body}</MDX>
+          <CommentoContainer>
+            <Commento />
+          </CommentoContainer>
         </PhotoLayout>
-        <CommentoContainer>
-          <Commento />
-        </CommentoContainer>
       </Layout>
     );
   }
