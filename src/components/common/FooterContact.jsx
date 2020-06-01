@@ -47,18 +47,19 @@ const FooterContact = () => {
         <Section>
           <h5>Let's Chat</h5>
           <Content>
-            I'm always happy to hear about new exciting projects. 
-            ↓ Do not hesitate to click on this link.
+            I'm always happy to hear about new exciting projects. ↓ Do not
+            hesitate to click on this link.
             <br />
-            <Link to="mailto:gael.billon&#64;gmail.com">
-              gael.billon&#64;gmail.com
+            <Link to="mailto:&#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+              &#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
             </Link>
           </Content>
         </Section>
         <Section>
           <h5>Keep In Touch</h5>
           <Content>
-            I'm on social media, follow me on Linkedin, Twitter, Instagram and Sketchfab.
+            I'm on social media, follow me on Linkedin, Twitter, Instagram and
+            Sketchfab.
             <IconList>
               <Link
                 to="https://www.linkedin.com/in/gaelbillon/"
@@ -94,10 +95,12 @@ const FooterContact = () => {
         <Section>
           <h5>Subscribe</h5>
           <Content>
-            Still using Really Simple Syndication ? Good idea, RSS is great. Here's the feed: {" "}
+            Still using Really Simple Syndication ? Good idea, RSS is great.
+            Here's the feed:{" "}
             <Link to="/rss.xml" target="_blank">
               RSS
-            </Link>{/*{" "}
+            </Link>
+            {/*{" "}
             or follow me on{" "}
             <Link to="https://medium.com/@desktopofsamuel" target="_blank">
               Medium

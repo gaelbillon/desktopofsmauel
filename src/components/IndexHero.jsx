@@ -52,31 +52,30 @@ const IndexHero = () => {
       <Column>
         <IntroWrapper>
           <Subtitle>
-            I am a{" "}
-            <Link to="/#web-developer">web developer</Link>,{" "}
+            I am a <Link to="/#web-developer">web developer</Link>,{" "}
             <Link to="/#blog">blogger</Link> and{" "}
             <Link to="/#photography">photographer</Link>.
           </Subtitle>
           <Subtitle>
-            I worked as a Proxy Product Owner at Schneider Electric. 
-            Before that, I co-founded Escadrone, a UAV pilot training 
-            center. I'm now freelancing.
+            I worked as a Proxy Product Owner at Schneider Electric. Before
+            that, I co-founded Escadrone, a UAV pilot training center. I'm now
+            freelancing.
           </Subtitle>
         </IntroWrapper>
         <LinkWrapper>
           <small>Contact</small>
           <div>
             <Emoji symbol="📬" />{" "}
-            <Link to="mailto:gael.billon&#64;gmail.com" target="_blank">
-              gael.billon&#64;gmail.com
+            <Link
+              to="mailto:&#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+              target="_blank"
+            >
+              &#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
             </Link>
           </div>
           <div>
             <Emoji symbol="🎤" />{" "}
-            <Link
-              to="https://www.linkedin.com/in/gaelbillon/"
-              target="_blank"
-            >
+            <Link to="https://www.linkedin.com/in/gaelbillon/" target="_blank">
               Linkedin
             </Link>{" "}
             /{" "}
@@ -84,10 +83,7 @@ const IndexHero = () => {
               Twitter
             </Link>{" "}
             /{" "}
-            <Link
-              to="https://www.instagram.com/gael_billon"
-              target="_blank"
-            >
+            <Link to="https://www.instagram.com/gael_billon" target="_blank">
               Instagram
             </Link>
           </div>
