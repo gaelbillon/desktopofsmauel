@@ -40,5 +40,4 @@ class PostTemplate extends React.Component {
     );
   }
 }
-// id={postNode.frontmatter.path} 
 export default PostTemplate;
