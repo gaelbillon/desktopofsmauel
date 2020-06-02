@@ -14,7 +14,7 @@ const Container = styled.main`
 `;
 
 const CommentoContainer = styled.div`
-  margin-top: var(--padding-xl);
+  margin-top: var(--padding-l);
 `;
 
 // const CommentoContainer = styled.main`

@@ -3,8 +3,8 @@
 
 /* Typography */
 :root {
-    --font-primary: /* canada-type-gibson, */ Helvetica, Arial, sans-serif;
-    --font-secondary: /* Libre Caslon Text , Lato, */ Georgia, serif;
+    --font-primary: /* canada-type-gibson, */ "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif;
+    --font-secondary: /* Libre Caslon Text , Lato, */ "Book Antiqua", "Palatino", "Cambria", "Lucida Bright", "Times New Roman", Georgia, serif;
     --font-tertiary: /* freight-big-pro, Lato, */ Georgia, serif;
     --font-weight-bold: 600;
     --font-weight-regular: 400;

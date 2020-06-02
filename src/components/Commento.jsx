@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
+import styled from "styled-components";
+
+const CommentoDiv = styled.div`
+  font-family: var(--font-primary) !important;
+`;
+
 // Helper to add scripts to our page
-const insertScript = (src, id, parentElement, attrName, attrValue) => {
+const insertScript = (src, id, parentElement, attrName, attrValue ) => {
   const script = window.document.createElement('script');
   script.async = true;
   script.src = src;
@@ -38,7 +44,7 @@ const Commento = ({ id }) => {
     return () => removeScript('commento-script', document.body);
   }, [id]);
   return (
-    <div id={"commento"} />
+    <CommentoDiv id={"commento"} />
   );
 };
 export default Commento;

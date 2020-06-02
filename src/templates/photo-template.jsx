@@ -79,7 +79,7 @@ const MDX = styled(MDXRenderer)`
 `;
 
 const CommentoContainer = styled.div`
-  margin-top: var(--padding-xl);
+  margin-top: var(--padding-l);
 `;
 
 export default class PhotoPageTemplate extends React.Component {
