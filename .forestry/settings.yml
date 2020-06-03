@@ -9,7 +9,7 @@ sections:
   label: Photo post
   create: all
   match: "**/*"
-  new_doc_ext: ".mdx"
+  new_doc_ext: mdx
 - type: directory
   path: content/blog
   label: Blog posts

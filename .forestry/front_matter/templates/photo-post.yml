@@ -1,0 +1,22 @@
+---
+label: Photo post
+hide_body: false
+fields:
+- type: text
+  name: posttype
+  label: posttype
+- type: text
+  name: title
+  label: title
+- type: text
+  name: path
+  label: path
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: cover
+  label: cover
+- type: textarea
+  name: tldr
+  label: tldr
