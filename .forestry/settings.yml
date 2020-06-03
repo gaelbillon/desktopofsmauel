@@ -5,6 +5,14 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: content/blog
+  label: Blog posts
+  create: documents
+  match: "**/*.mdx"
+  new_doc_ext: ".mdx"
+  templates:
+  - blog-post
+- type: directory
   path: content
   label: Content
   create: all
