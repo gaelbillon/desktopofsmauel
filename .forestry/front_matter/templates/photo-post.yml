@@ -4,19 +4,43 @@ hide_body: false
 fields:
 - type: text
   name: posttype
-  label: posttype
+  label: Post type
+  default: photo
+  config:
+    required: true
+    min: 5
+    max: 5
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: path
-  label: path
-- type: datetime
-  name: date
-  label: date
+  label: Path
+  config:
+    required: true
 - type: file
   name: cover
-  label: cover
+  label: Cover image
+  default: "/uploads/single-pixel-transparent-png-image-default-placeholder-1.png"
 - type: textarea
   name: tldr
-  label: tldr
+  label: TL;DR
+  config:
+    required: true
+    max: 120
+- name: draft
+  type: boolean
+  label: Draft
+  default: true
+  showOnly:
+    field: draft
+    value: false
+- type: datetime
+  name: date
+  label: Date
+  config:
+    date_format: YYYY-MM-DD
+    export_format: YYYY-MM-DD
+    required: true
+  default: now
