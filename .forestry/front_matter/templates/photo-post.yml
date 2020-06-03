@@ -14,11 +14,15 @@ fields:
 - type: text
   name: title
   label: Title
+  description: Google typically displays the first 50–60 characters of a title tag.
+    If you keep your titles under 60 characters, our research suggests that you can
+    expect about 90% of your titles to display properly.
 - type: text
   name: path
-  label: Path
+  label: Path / Slug
   config:
     required: true
+  description: Never use a number or uppercase character in path/slug
 - type: file
   name: cover
   label: Cover image
@@ -27,8 +31,10 @@ fields:
   name: tldr
   label: TL;DR
   config:
-    required: true
+    required: false
     max: 120
+  description: New Google's meta description length is up to 158 characters. On mobile
+    devices, the max limit is about 120 characters.
 - name: draft
   type: boolean
   label: Draft
