@@ -2,10 +2,12 @@ import React from "react"; // import React, { Component } from "react";
 import Link from "./GatsbyLink";
 import styled from "styled-components";
 import "../../layout/index.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import Popup from "reactjs-popup";
 import FadeIn from "react-fade-in";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 
 const Main = styled.div`
   background: var(--color-white-500);
@@ -66,11 +68,11 @@ const NavItemIcon = styled(NavItem)`
   }
 `;
 
-const MenuIcon = styled(FontAwesomeIcon)`
-  font-size: 12px;
-  border-bottom: none;
-  color: var(--secondary-700);
-`;
+// const MenuIcon = styled(FontAwesomeIcon)`
+//   font-size: 12px;
+//   border-bottom: none;
+//   color: var(--secondary-700);
+// `;
 
 const MobileItem = styled(Link)`
   display: block;
@@ -172,7 +174,8 @@ class NavBar extends React.Component {
                 <small>Photogrammetry</small>
               </NavItem>
               <NavItemIcon onClick={this.openModal} className="noeffect">
-                <MenuIcon icon={faBars} size="lg" />
+                {/* <MenuIcon icon={faBars} size="lg" /> */}
+                <FaBars />
               </NavItemIcon>
             </NavRight>
           </NavSection>
@@ -210,11 +213,12 @@ class NavBar extends React.Component {
                       <h1>Photo</h1>
                     </MobileItem>
                     <MobileItem className="noeffect">
-                      <MenuIcon
+                      { /* <MenuIcon
                         icon={faTimes}
                         size="lg"
                         onClick={this.closeModal}
-                      />
+                      /> */ }
+                      <FaTimes onClick={this.closeModal} />
                     </MobileItem>
                   </FadeIn>
                 </MobileNav>

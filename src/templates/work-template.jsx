@@ -15,7 +15,7 @@ import config from "../../data/SiteConfig";
 // `;
 
 const WorkWrapper = styled(Boxed)`
-  max-width: 600px;
+  max-width: var(--page-container-m);
 `;
 
 const MDX = styled(MDXRenderer)`
@@ -64,7 +64,7 @@ export const pageQuery = graphql`
           publicURL
           childImageSharp {
             fluid(maxHeight: 1200) {
-              ...GatsbyImageSharpFluid_noBase64
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

@@ -6,20 +6,24 @@ const CommentoDiv = styled.div`
 `;
 
 // Helper to add scripts to our page
-const insertScript = (src, id, parentElement, attrName, attrValue ) => {
-  const script = window.document.createElement('script');
-  script.async = true;
-  script.src = src;
-  script.id = id;
-  script.setAttribute(attrName, attrValue);
-  parentElement.appendChild(script);
-  return script;
+const insertScript = (src, id, parentElement, attrName, attrValue) => {
+  if (typeof window !== "undefined") {
+    const script = window.document.createElement('script');
+    script.async = true;
+    script.src = src;
+    script.id = id;
+    script.setAttribute(attrName, attrValue);
+    parentElement.appendChild(script);
+    return script;
+  }
 };
 // Helper to remove scripts from our page
 const removeScript = (id, parentElement) => {
-  const script = window.document.getElementById(id);
-  if (script) {
-    parentElement.removeChild(script);
+  if (typeof window !== "undefined") {
+    const script = window.document.getElementById(id);
+    if (script) {
+      parentElement.removeChild(script);
+    }
   }
 };
 // The actual component

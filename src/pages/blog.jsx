@@ -4,7 +4,7 @@ import Boxed from "elements/Boxed";
 import PageTitle from "elements/PageTitle";
 import styled from "styled-components";
 import Layout from "../layout";
-import BlogList from "../components/BlogList";
+import PostHero from "../components/PostHero";
 import Link from "../components/common/GatsbyLink";
 
 const Row = styled.section`
@@ -67,7 +67,9 @@ const BlogPage = ({ data }) => {
                 <CategoryBlock>
                   <small>Top Categories</small>
                   <h3>
-                    <Link to="/categories/mobile-apps">Mobile applications</Link>
+                    <Link to="/categories/mobile-apps">
+                      Mobile applications
+                    </Link>
                   </h3>
                   <h3>
                     <Link to="/categories/webperf">Web performance</Link>
@@ -84,7 +86,7 @@ const BlogPage = ({ data }) => {
             <Right>
               <Row id="latest">
                 <small>Latest</small>
-                <BlogList postEdges={postEdges} />
+                <PostHero postEdges={postEdges} />
               </Row>
             </Right>
           </Main>
@@ -114,7 +116,7 @@ export const bloglisting = graphql`
         publicURL
         size
         childImageSharp {
-          sizes(maxWidth: 1140) {
+          sizes(maxWidth: 1080) {
             base64
             aspectRatio
             src
@@ -156,7 +158,7 @@ export const pageQuery = graphql`
               publicURL
               size
               childImageSharp {
-                sizes(maxWidth: 1200) {
+                sizes(maxWidth: 1080) {
                   base64
                   aspectRatio
                   src

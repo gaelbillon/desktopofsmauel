@@ -53,7 +53,7 @@ export const pageQuery = graphql`
           publicURL
           size
           childImageSharp {
-            sizes(maxWidth: 1140) {
+            sizes(maxWidth: 1080) {
               base64
               aspectRatio
               src

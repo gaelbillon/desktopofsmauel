@@ -130,6 +130,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     const prevSlug =
       index === arr.length - 1 ? `` : arr[index + 1].node.frontmatter.path;
     const slug = node.frontmatter.path;
+    // console.log(node.frontmatter.path + " : " + node.id);
     createPage({
       path: `/photo${slug}`,
       component: photoPage,
@@ -146,6 +147,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     const slug = node.frontmatter.path;
     const next = index === 0 ? `` : arr[index - 1].node;
     const prev = index === arr.length - 1 ? `` : arr[index + 1].node;
+    // console.log(node.frontmatter.path + " : " + node.id);
     createPage({
       path: `${slug}`,
       component: postPage,
@@ -201,6 +203,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     const prevSlug =
       index === arr.length - 1 ? `` : arr[index + 1].node.frontmatter.path;
     const slug = node.frontmatter.path;
+    // console.log(node.frontmatter.path + " : " + node.id);
     createPage({
       path: `/work${slug}`,
       component: workPage,

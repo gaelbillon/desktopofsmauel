@@ -25,42 +25,43 @@ const config = {
   userDescription:
     "👋 I’m Gaël, born and raised in the world wide web. Web developper since 1998, Business Analyst, 📱 Mobile web apps developer, Search optimizer & webmarketing specialist, ⚡️ Webperformance activist, 👤 User experience & customer satisfaction zealot", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
-    {
-      label: "Twitter",
-      url: "https://twitter.com/gaelbillon",
-      iconClassName: "fa fa-twitter",
-    },
-    {
-      label: "Email",
-      url:
-        "mailto:&#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;",
-      iconClassName: "fa fa-envelope",
-    },
-    {
-      label: "Github",
-      url: "https://twitter.com/gaelbillon",
-      iconClassName: "fa fa-github",
-    },
-    {
-      label: "Github",
-      url: "https://linkedin.com/in/gaelbillon",
-      iconClassName: "fa fa-linkedin",
-    },
-    {
-      label: "Instagram",
-      url: "https://instagram.com/gael_billon",
-      iconClassName: "fa fa-instagram",
-    },
-    {
-      label: "Sketchfab",
-      url: "https://sketchfab.com/gael.billon",
-      iconClassName: "fa fa-cube",
-    },
-  ],
+  // userLinks: [
+  //   {
+  //     label: "Twitter",
+  //     url: "https://twitter.com/gaelbillon",
+  //     iconClassName: "fa fa-twitter",
+  //   },
+  //   {
+  //     label: "Email",
+  //     url:
+  //       "mailto:&#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;",
+  //     iconClassName: "fa fa-envelope",
+  //   },
+  //   {
+  //     label: "Github",
+  //     url: "https://twitter.com/gaelbillon",
+  //     iconClassName: "fa fa-github",
+  //   },
+  //   {
+  //     label: "Github",
+  //     url: "https://linkedin.com/in/gaelbillon",
+  //     iconClassName: "fa fa-linkedin",
+  //   },
+  //   {
+  //     label: "Instagram",
+  //     url: "https://instagram.com/gael_billon",
+  //     iconClassName: "fa fa-instagram",
+  //   },
+  //   {
+  //     label: "Sketchfab",
+  //     url: "https://sketchfab.com/gael.billon",
+  //     iconClassName: "fa fa-cube",
+  //   },
+  // ],
   copyright: "©2020 Gaël Billon.", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#FFD644", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0", // Used for setting manifest background color.
+  maxWidth: 1080
 };
 
 // Make sure pathPrefix is empty if not needed

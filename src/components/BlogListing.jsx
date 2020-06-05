@@ -104,18 +104,24 @@ class BlogListing extends React.Component {
     return postList.map(post => (
       <Block className="noeffect" invert={invert} key={post.title}>
         {" "}
+        {/* <Link to={post.path} className="noeffect"> */}
         <Link to={post.path} className="noeffect">
           <PostListImage
             fluid={post.cover.childImageSharp.fluid}
             alt={post.title}
           />
-          <Content>
-            <h3>
-              <a>{post.title}</a>
-            </h3>
+        </Link>
+        <Content>
+          <h3>
+            {/* <a>{post.title}</a> */}
+            {/* <Link to={post.title} /> */}
+            <Link to={post.path}>{post.title}</Link>
+          </h3>
+          <Link to={post.path} className="noeffect">
             <Paragraph className="noeffect"> {post.excerpt}</Paragraph>
-          </Content>
-        </Link>{" "}
+          </Link>
+        </Content>
+        {/* </Link>{" "} */}
       </Block>
     ));
   }

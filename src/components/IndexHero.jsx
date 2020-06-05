@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faInstagram,
-  faMedium,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { faCube } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faTwitter,
+//   faInstagram,
+//   faMedium,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons";
+// import { faCube } from "@fortawesome/free-solid-svg-icons";
 import Boxed from "../elements/Boxed";
 import Profile from "../../static/images/Profile.jpg";
 import Link from "./common/GatsbyLink";
 import Column from "../elements/Column";
 import Emoji from "./common/Emoji";
+
 
 const Container = styled(Boxed)`
   max-width: var(--page-container-l);

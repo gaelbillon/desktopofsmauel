@@ -132,7 +132,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
-  word-break: break-all; /* Prevents horizontal overflow on small screens. */
+  /* word-break: break-all; */ /* Prevents horizontal overflow on small screens. */
 }
 
 a:hover {
@@ -325,7 +325,7 @@ code {
 	word-break: break-word !important;
 }
 
-a {
+/* a {
     word-break: break-all;
-}
+} */
 /* End : prevents horizontal overflow on small screens. */

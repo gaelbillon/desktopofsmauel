@@ -312,13 +312,31 @@ const AboutPage = ({ data }) => {
 
 export default AboutPage;
 
+// export const fluidImage = graphql`
+//   fragment fluidImage on File {
+//     childImageSharp {
+//       fluid(maxWidth: 1000) {
+//         ...GatsbyImageSharpFluid_withWebp
+//       }
+//     }
+//   }
+// `;
+
 export const pageQuery = graphql`
-  query {
-    cover: file(relativePath: { eq: "images/About-Cover.jpg" }) {
-      ...fluidImage
-    }
-    bio: file(relativePath: { eq: "images/Bio.jpg" }) {
-      ...fluidImage
-    }
-  }
-`;
+         query {
+           cover: file(relativePath: { eq: "images/About-Cover.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 ...GatsbyImageSharpFluid_withWebp
+               }
+             }
+           }
+           bio: file(relativePath: { eq: "images/Bio.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 ...GatsbyImageSharpFluid_withWebp
+               }
+             }
+           }
+         }
+       `;

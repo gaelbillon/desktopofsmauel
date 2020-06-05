@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React from "react"; // import React, { Component } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
+// import FadeIn from "react-fade-in";
 
 const Grid = styled.section`
   margin-top: 2rem;
@@ -15,6 +16,11 @@ const ListItem = styled.article`
 
   p {
     margin-bottom: 0.5rem;
+    color: var(--color-secondary-700);
+  }
+
+  small {
+    color: var(--color-secondary-500);
   }
 
   :last-child {
@@ -22,26 +28,26 @@ const ListItem = styled.article`
   }
 `;
 
-const Hero = styled.a`
-  margin-bottom: 0;
+const Hero = styled.h2`
+  margin-top: 0;
 `;
 
 const PostImage = styled(Img)`
-  margin-bottom: var(--var-padding-m);
+  margin-bottom: var(--var-padding-s);
 `;
 
-class PhotoHero extends React.Component {
+class PostHero extends React.Component {
   getPostList() {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
       postList.push({
-        path: "/photo" + postEdge.node.fields.slug,
+        path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.frontmatter.tldr || postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead
+        timeToRead: postEdge.node.timeToRead,
       });
     });
     return postList;
@@ -50,16 +56,20 @@ class PhotoHero extends React.Component {
     const postList = this.getPostList();
     return (
       <Grid>
-        {/* Your post list here. */
-        postList.map(post => (
-          <ListItem>
-            <Link to={post.path} key={post.title}>
-              <PostImage sizes={post.cover.childImageSharp.sizes} />
-              <h3>
-                <Hero>{post.title}</Hero>
-              </h3>
+        {postList.map(post => (
+          <ListItem key={post.path}>
+            <Link to={post.path}>
+              <PostImage
+                sizes={post.cover.childImageSharp.sizes}
+                alt={post.title}
+              />
             </Link>
-            <p>{post.excerpt}</p>
+            <Hero>
+              <Link to={post.path}>{post.title}</Link>
+            </Hero>
+            <Link to={post.path}>
+              <p className="noeffect">{post.excerpt}</p>
+            </Link>
             <small>{post.date}</small>
           </ListItem>
         ))}
@@ -68,4 +78,4 @@ class PhotoHero extends React.Component {
   }
 }
 
-export default PhotoHero;
+export default PostHero;

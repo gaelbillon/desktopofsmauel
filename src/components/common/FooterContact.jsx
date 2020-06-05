@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faInstagram,
-  // faMedium,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { faCube } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faTwitter,
+//   faInstagram,
+//   // faMedium,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons";
+// import { faCube } from "@fortawesome/free-solid-svg-icons";
 import Link from "./GatsbyLink";
 import Boxed from "../../elements/Boxed";
+import { FaLinkedin, FaTwitter, FaInstagram, FaCube } from "react-icons/fa";
 
 const Container = styled.section`
   display: block;
@@ -34,10 +35,20 @@ const IconList = styled.div`
   flex-direction: row;
 `;
 
-const FooterIcon = styled(FontAwesomeIcon)`
+// const FooterIcon = styled(FontAwesomeIcon)`
+//   margin: 0.5rem 1rem 0 0;
+//   font-size: 18px;
+//   border-bottom: none;
+// `;
+
+const FooterIcon = styled.div`
   margin: 0.5rem 1rem 0 0;
   font-size: 18px;
   border-bottom: none;
+  color: var(--color-secondary-500);
+  :hover {
+    hover var(--color-brand-500);
+  }
 `;
 
 const FooterContact = () => {
@@ -61,34 +72,42 @@ const FooterContact = () => {
             I'm on social media, follow me on Linkedin, Twitter, Instagram and
             Sketchfab.
             <IconList>
-              <Link
-                to="https://www.linkedin.com/in/gaelbillon/"
-                className="noeffect linkicon"
-                target="_blank"
-              >
-                <FooterIcon icon={faLinkedin} />
-              </Link>
-              <Link
-                to="http://www.twitter.com/gaelbillon"
-                className="noeffect linkicon"
-                target="_blank"
-              >
-                <FooterIcon icon={faTwitter} />
-              </Link>
-              <Link
-                to="http://www.instagram.com/gael_billon"
-                className="noeffect linkicon"
-                target="_blank"
-              >
-                <FooterIcon icon={faInstagram} />
-              </Link>
-              <Link
-                to="http://www.sketchfab.com/gael.billon"
-                className="noeffect linkicon"
-                target="_blank"
-              >
-                <FooterIcon icon={faCube} />
-              </Link>
+              <FooterIcon>
+                <Link
+                  to="https://www.linkedin.com/in/gaelbillon/"
+                  className="noeffect linkicon"
+                  target="_blank"
+                >
+                  <FaLinkedin />
+                </Link>
+              </FooterIcon>
+              <FooterIcon>
+                <Link
+                  to="http://www.twitter.com/gaelbillon"
+                  className="noeffect linkicon"
+                  target="_blank"
+                >
+                  <FaTwitter />
+                </Link>
+              </FooterIcon>
+              <FooterIcon>
+                <Link
+                  to="http://www.instagram.com/gael_billon"
+                  className="noeffect linkicon"
+                  target="_blank"
+                >
+                  <FaInstagram />
+                </Link>
+              </FooterIcon>
+              <FooterIcon>
+                <Link
+                  to="http://www.sketchfab.com/gael.billon"
+                  className="noeffect linkicon"
+                  target="_blank"
+                >
+                  <FaCube />
+                </Link>
+              </FooterIcon>
             </IconList>
           </Content>
         </Section>

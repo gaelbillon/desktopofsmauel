@@ -1,10 +1,12 @@
 import React from "react"; // import React, { Component } from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
 // import PageTitle from "elements/PageTitle";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 const Grid = styled.div`
   display: block;
@@ -106,11 +108,13 @@ const GridButton = styled.small`
   }
 `;
 
-const LinkIcon = styled(FontAwesomeIcon)`
-  margin-left: 1rem;
-  font-size: 1em;
-  border-bottom: none;
-`;
+// const LinkIcon = styled.span`
+//   margin-left: 1rem;
+//   font-size: 1em;
+//   border-bottom: none;
+// `;
+
+
 
 class PhotogrammetryMagazine extends React.Component {
   getPostList() {
@@ -142,31 +146,32 @@ class PhotogrammetryMagazine extends React.Component {
           {/* <GridHeading>On Photogrammetry</GridHeading> 
           <GridSeparator /> */}
           <p>
-            Photogrammetry softwares are incredible. They can turn a bunch of pictures
-            into a 3D model. Although I do that only for fun, photogrammetry is used by 
-            surveyors, architects, civil engineers, disaster relief coordinators, video game
-            creators, cinema and in a lot of other fields. Pictures can be taken from the 
-            ground, from the air (with a drone), or both. They can also be enhanced with 
-            RTK GPS (like a standard GPS but with centimeter accuracy) and with LiDAR 
-            (like a laser rangefinder but rotating on 360° and capturing hundreds of thousands 
-            of points per second). Measurement can subsequently be taken with great 
-            precision. But to get started, a smartphone is more than enough. Browse more 3D models on my{" "}
-            <a href="https://sketchfab.com/gael.billon">Sketchfab</a>{" "}
-            page.
+            Photogrammetry softwares are incredible. They can turn a bunch of
+            pictures into a 3D model. Although I do that only for fun,
+            photogrammetry is used by surveyors, architects, civil engineers,
+            disaster relief coordinators, video game creators, cinema and in a
+            lot of other fields. Pictures can be taken from the ground, from the
+            air (with a drone), or both. They can also be enhanced with RTK GPS
+            (like a standard GPS but with centimeter accuracy) and with LiDAR
+            (like a laser rangefinder but rotating on 360° and capturing
+            hundreds of thousands of points per second). Measurement can
+            subsequently be taken with great precision. But to get started, a
+            smartphone is more than enough. Browse more 3D models on my{" "}
+            <a href="https://sketchfab.com/gael.billon">Sketchfab</a> page.
           </p>
         </GridItem>
         {/* Your post list here. */
         postList.map(post => (
           <GridItem className="photo-item noeffect" key={post.title}>
             <PhotogrametryProjectPhoto>
-              <Link to={post.path} className="noeffect">
-                <GridPhotogrammetry sizes={post.cover.childImageSharp.sizes} />
-              </Link>
+              {/* <Link to={post.path} className="noeffect"> */}
+              <GridPhotogrammetry sizes={post.cover.childImageSharp.sizes} />
+              {/* </Link> */}
             </PhotogrametryProjectPhoto>
             <PhotogrametryProjectDetails>
-              <Link to={post.path} className="noeffect">
-                <GridTitle>{post.title}</GridTitle>
-              </Link>
+              {/* <Link to={post.path} className="noeffect"> */}
+              <GridTitle>{post.title}</GridTitle>
+              {/* </Link>  */}
               <GridContentWrapper>
                 <PhotogrammetryProjectList>
                   <li>Number of photos: {post.photocount}</li>
@@ -174,7 +179,7 @@ class PhotogrammetryMagazine extends React.Component {
                   <li>Number of polygons: {post.polycount}</li>
                   <li>Texture size: {post.texture}</li>
                   <li>Software: {post.processingsoftware}</li>
-                  { /* {post.excerpt && <li>{post.excerpt}</li>} */ }
+                  {/* {post.excerpt && <li>{post.excerpt}</li>} */}
                 </PhotogrammetryProjectList>
                 <a
                   href={post.sketchfablink}
@@ -183,11 +188,10 @@ class PhotogrammetryMagazine extends React.Component {
                   rel="noopener noreferrer"
                   classname="outgoingLink"
                 >
-                  <GridButton> View 3D model
-                    <LinkIcon
-                      icon={faExternalLinkAlt}
-                      size="s"
-                    />
+                  <GridButton>
+                    View 3D model
+                    {" "}
+                    <FaExternalLinkAlt />
                   </GridButton>
                 </a>
               </GridContentWrapper>

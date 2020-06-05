@@ -82,7 +82,7 @@ class WorkHero extends React.Component {
       <Grid>
         {/* Your post list here. */
         postList.map(post => (
-          <Link to={`/work/${post.path}`} key={post.title}>
+          <Link to={`/work${post.path}`} key={post.title}>
             <ListItem style={{ borderLeftColor: `${post.color}` }}>
               <ListLeft>
                 <div>

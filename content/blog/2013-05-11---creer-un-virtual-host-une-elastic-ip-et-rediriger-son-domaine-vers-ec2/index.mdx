@@ -1,5 +1,4 @@
 ---
-id: "/creer-un-virtual-host-une-elastic-ip-et-rediriger-son-domaine-vers-ec-deux"
 path: "/creer-un-virtual-host-une-elastic-ip-et-rediriger-son-domaine-vers-ec-deux"
 date: "2013-05-11T18:42:08.000Z"
 title: "Créer un virtual host, une elastic IP et rediriger son domaine vers EC2"
@@ -13,7 +12,7 @@ draft: false
 
 ## Configurer les virtual host
 
-Après avoir [configuré un serveur ubuntu avec amazon EC2](/configurer-un-serveur-ubuntu-en-10-min-avec-amazon-ec2-et-en-plus-cest-gratuit/ "Configurer gratuitement un serveur ubuntu en 10 min avec amazon EC2"), on va maintenant voir comment le configurer.
+Après avoir [configuré un serveur ubuntu avec amazon EC2](/configurer-un-serveur-ubuntu-en-10-min-avec-amazon-ec2-et-en-plus-cest-gratuit/), on va maintenant voir comment le configurer.
 
 Il faut d’abord créer l’arboresscence nécessaire pour notre site
 
@@ -25,7 +24,7 @@ mkdir ~/ubuntu/public\_html/domain.com/log
 chmod -R 755 ~/ubuntu/public\_html/domain.com
 ```
 
-Il faut ensuite modifier la config d’apache pour qu’il sache ou se trouve notre dossier domain.com, par défaut les sites accesible par apache sont dans `/var/www` , ici on préfère mettre domain.com dans le repertoire utilisateur (`/home/users/ubuntu`) afin de pouvoir y accéder facilement avec un client ftp. Pour se connecter en SFTP tout est expliqué dans [cet article](/se-connecter-en-sftp-a-une-instance-ec-deux-avec-transmit/ "Se connecter en SFTP à une instance EC2 avec Transmit").
+Il faut ensuite modifier la config d’apache pour qu’il sache ou se trouve notre dossier domain.com, par défaut les sites accesible par apache sont dans `/var/www` , ici on préfère mettre domain.com dans le repertoire utilisateur (`/home/users/ubuntu`) afin de pouvoir y accéder facilement avec un client ftp. Pour se connecter en SFTP tout est expliqué dans [cet article](/se-connecter-en-sftp-a-une-instance-ec-deux-avec-transmit/).
 
 On va créer un nouveau fichier dans sites-available nano /etc/apache2/sites-available/domain.com
 
@@ -60,7 +59,7 @@ Puis on rafraichit la configuration d’apache sudo service apache2 reload
 
 ## Créer une elastic IP
 
-On se rend sur la console [AWS](https://console.aws.amazon.com/ec2). Si vous n'avez pas encore créé d'instance EC2, voir [cet article](/configurer-un-serveur-ubuntu-en-10-min-avec-amazon-ec2-et-en-plus-cest-gratuit/ "Configurer gratuitement un serveur ubuntu en 10 min avec amazon EC2").
+On se rend sur la console [AWS](https://console.aws.amazon.com/ec2). Si vous n'avez pas encore créé d'instance EC2, voir [cet article](/configurer-un-serveur-ubuntu-en-10-min-avec-amazon-ec2-et-en-plus-cest-gratuit/).
 
 [aws ec2 allocate new elastic IP](./Screen-shot-2013-05-10-at-4.42.48-PM-624x390.png) et dans elastic ip, “allocate new adress”
 

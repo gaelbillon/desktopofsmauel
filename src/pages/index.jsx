@@ -286,7 +286,7 @@ export const pageQuery = graphql`
               publicURL
               childImageSharp {
                 fluid(maxHeight: 1200) {
-                  ...GatsbyImageSharpFluid_noBase64
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

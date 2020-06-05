@@ -21,10 +21,8 @@ const Related = ({ node }) => {
       <Wrapper size="small">
         <small>Read Next</small>
         <Link to={node.path}>
-          <h3>
-            <a>{node.title}</a>
-          </h3>
-          <p>{node.excerpt}</p>
+        <h3>{node.title}</h3>
+        <p>{node.excerpt}</p>
         </Link>
       </Wrapper>
     </Container>

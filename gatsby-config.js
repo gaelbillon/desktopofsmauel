@@ -81,33 +81,66 @@ module.exports = {
         plugins: [
           `gatsby-remark-images`,
           `gatsby-remark-images-medium-zoom`, // Important!
+          // `gatsby-remark-images-zoom`,
+          // "gatsby-remark-responsive-iframe"
         ],
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-images",
             options: {
-              linkImagesToOriginal: false,
-              maxWidth: 1235,
+              linkImagesToOriginal: false, // Important! (for gatsby-remark-images-medium-zoom-plugin)
+              maxWidth: config.maxWidth,
+              // backgroundColor: `transparent`,
+              withWebp: true,
+              // tracedSVG: true,
             },
           },
           "gatsby-remark-images-medium-zoom",
-          "gatsby-remark-responsive-iframe",
+          // `gatsby-remark-images-zoom`,
+          // "gatsby-remark-responsive-iframe",
           {
             resolve: `gatsby-remark-figure-caption`,
             options: { figureClassName: "remark-figure" },
           },
           "gatsby-remark-prismjs",
           "gatsby-remark-grid-tables",
-          "gatsby-remark-copy-linked-files",
-          {
-            resolve: "gatsby-remark-autolink-headers",
-            options: {
-              icon: false,
-            },
-          },
+          "gatsby-remark-copy-linked-files", //,
+          // {
+          //   resolve: "gatsby-remark-autolink-headers",
+          //   options: {
+          //     icon: true,
+          //     className: `header-link-icon`,
+          //     maintainCase: false,
+          //     removeAccents: true,
+          //     isIconAfterHeader: true,
+          //   },
+          // },
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           maxWidth: config.maxWidth,
+    //           backgroundColor: `transparent`,
+    //           linkImagesToOriginal: false, // Important! (for gatsby-remark-images-medium-zoom-plugin)
+    //           withWebp: true,
+    //           tracedSVG: true,
+    //         },
+    //       },
+    //       {
+    //         resolve: "gatsby-remark-autolink-headers",
+    //         options: {
+    //           icon: true,
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
     // {
     //   resolve: "gatsby-plugin-google-analytics",
     //   options: {
@@ -123,7 +156,7 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-catch-links",
+    // "gatsby-plugin-catch-links",
     // "gatsby-plugin-twitter",
     "gatsby-plugin-sitemap",
     {
@@ -170,6 +203,17 @@ module.exports = {
     //     color: `tomato`,
     //     // Disable the loading spinner.
     //     showSpinner: false,
+    //   },
+    // },
+    // {
+    //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+    //   options: {
+    //     disable: true,
+    //     devMode: false,
+    //     analyzerMode: "server",
+    //     analyzerPort: "8888",
+    //     analyzerHost: "http://myhost.com",
+    //     defaultSizes: "gzip",
     //   },
     // },
     {
@@ -234,7 +278,7 @@ module.exports = {
                         publicURL
                         size
                         childImageSharp {
-                          sizes(maxWidth: 1140) {
+                          sizes(maxWidth: 1080) {
                             base64
                             aspectRatio
                             src
