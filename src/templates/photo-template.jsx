@@ -18,9 +18,17 @@ const Cover = styled(Img)`
 const PhotoLayout = styled.div`
   max-width: var(--page-container-m);
   margin: 0 auto;
-
+  text-align: center;
+  
   @media screen and (max-width: 1024px) {
     max-width: 100%;
+  }
+  
+  p {
+    margin: var(--var-padding-s) 0 0 0;
+  } 
+  span {
+    margin-top: var(--var-padding-ml);
   }
 `;
 
@@ -72,12 +80,6 @@ const Title = styled.h1`
   margin-bottom: 0;
 `;
 
-const MDX = styled(MDXRenderer)`
-  p {
-    text-align: center;
-  }
-`;
-
 const CommentoContainer = styled.div`
   margin-top: var(--padding-l);
 `;
@@ -107,7 +109,7 @@ export default class PhotoPageTemplate extends React.Component {
             </TitleWrapper>
           </Header>
 
-          <MDX>{photoNode.body}</MDX>
+          <MDXRenderer>{photoNode.body}</MDXRenderer>
           <CommentoContainer>
             <Commento />
           </CommentoContainer>

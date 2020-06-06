@@ -29,6 +29,7 @@
       --font-size-base: 16px;
       --font-scale-ratio: 0.8;
       --var-padding-l: 3rem;
+      --var-padding-ml: 2rem;
       --var-padding-m: 1rem;
       --var-padding-s: 0.5rem;
     }
@@ -62,6 +63,7 @@
     --padding-l: 4rem;
     --padding-xl: 8rem;
     --var-padding-l: 6rem;
+    --var-padding-ml: 4rem;
     --var-padding-m: 2rem;
     --var-padding-s: 1rem;
     --grid-gap: 24px;

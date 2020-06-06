@@ -103,7 +103,7 @@ module.exports = {
             options: { figureClassName: "remark-figure" },
           },
           "gatsby-remark-prismjs",
-          "gatsby-remark-grid-tables",
+          // "gatsby-remark-grid-tables", (needed to display two images side by side on photo pages by creating advanced markdown tableswith colspans)
           "gatsby-remark-copy-linked-files", //,
           // {
           //   resolve: "gatsby-remark-autolink-headers",
