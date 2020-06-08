@@ -70,21 +70,38 @@ const IndexHero = () => {
             <Link
               to="mailto:&#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
               target="_blank"
+              aria-label="Email"
+              rel="noopener"
             >
               &#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
             </Link>
           </div>
           <div>
             <Emoji symbol="🎤" />{" "}
-            <Link to="https://www.linkedin.com/in/gaelbillon/" target="_blank">
+            <Link
+              to="https://www.linkedin.com/in/gaelbillon/"
+              target="_blank"
+              aria-label="LinkedIn"
+              rel="noopener"
+            >
               Linkedin
             </Link>{" "}
             /{" "}
-            <Link to="https://www.twitter.com/gaelbillon" target="_blank">
+            <Link
+              to="https://www.twitter.com/gaelbillon"
+              target="_blank"
+              aria-label="Twitter"
+              rel="noopener"
+            >
               Twitter
             </Link>{" "}
             /{" "}
-            <Link to="https://www.instagram.com/gael_billon" target="_blank">
+            <Link
+              to="https://www.instagram.com/gael_billon"
+              target="_blank"
+              aria-label="Instagram"
+              rel="noopener"
+            >
               Instagram
             </Link>
           </div>

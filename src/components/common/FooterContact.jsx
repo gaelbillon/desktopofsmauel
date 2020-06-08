@@ -77,6 +77,8 @@ const FooterContact = () => {
                   to="https://www.linkedin.com/in/gaelbillon/"
                   className="noeffect linkicon"
                   target="_blank"
+                  aria-label="LinkedIn"
+                  rel="noopener"
                 >
                   <FaLinkedin />
                 </Link>
@@ -86,6 +88,8 @@ const FooterContact = () => {
                   to="http://www.twitter.com/gaelbillon"
                   className="noeffect linkicon"
                   target="_blank"
+                  aria-label="Twitter"
+                  rel="noopener"
                 >
                   <FaTwitter />
                 </Link>
@@ -95,6 +99,8 @@ const FooterContact = () => {
                   to="http://www.instagram.com/gael_billon"
                   className="noeffect linkicon"
                   target="_blank"
+                  aria-label="Instagram"
+                  rel="noopener"
                 >
                   <FaInstagram />
                 </Link>
@@ -104,6 +110,8 @@ const FooterContact = () => {
                   to="http://www.sketchfab.com/gael.billon"
                   className="noeffect linkicon"
                   target="_blank"
+                  aria-label="Sketchfab"
+                  rel="noopener"
                 >
                   <FaCube />
                 </Link>
