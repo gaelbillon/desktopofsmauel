@@ -64,6 +64,7 @@ fields:
   description: Set to true (green) if don't want to publish now. Else, set to false
     (grey)
 pages:
+- content/blog/les-sites-jamstack-sont-ils-moins-bons-pour-le-seo.mdx
 - content/blog/nextjs-gatsby-ssg-ssr-et-csr.mdx
 - content/blog/nextjs-gatsby-ssg-ssr-et-csr.mdx
 - content/blog/principales-differences-entre-gatsby-et-nextjs.mdx
