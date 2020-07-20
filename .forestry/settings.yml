@@ -40,8 +40,8 @@ sections:
   new_doc_ext: mdx
 upload_dir: static/images/forestry
 public_path: "/images/forestry"
-front_matter_path: ''
-use_front_matter_path: false
+front_matter_path: "../../static/images/forestry"
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_output_directory: public
