@@ -4,20 +4,6 @@ hide_body: false
 display_field: title
 fields:
 - type: text
-  name: path
-  label: Path / Slug
-  description: Never use a number or uppercase character in path/slug
-  config:
-    required: true
-- type: datetime
-  name: date
-  label: Date
-  config:
-    export_format: YYYY-MM-DD
-    date_format: YYYY-MM-DD
-    required: true
-  description: 'Formated as : YYYY-MM-DD'
-- type: text
   name: title
   label: Title
   config:
@@ -26,6 +12,25 @@ fields:
   description: Google typically displays the first 50–60 characters of a title tag.
     If you keep your titles under 60 characters, our research suggests that you can
     expect about 90% of your titles to display properly.
+- type: text
+  name: path
+  label: Path / Slug
+  description: Never use a number or uppercase character in path/slug
+  config:
+    required: true
+- type: text
+  name: tldr
+  label: TL;DR
+  description: New Google's meta description length is up to 158 characters. On mobile
+    devices, the max limit is about 120 characters.
+- type: datetime
+  name: date
+  label: Date
+  config:
+    export_format: YYYY-MM-DD
+    date_format: YYYY-MM-DD
+    required: true
+  description: 'Formated as : YYYY-MM-DD'
 - type: text
   name: category
   label: Category
@@ -44,11 +49,6 @@ fields:
     English, Static websites, Dashboard, Data Visualisation, Dataviz,<br><br>Will
     be displayed like so in mdx file :<br>tags:<br> - "Français"<br> - "JAMstack"<br>
     - "Static"'
-- type: text
-  name: tldr
-  label: TL;DR
-  description: New Google's meta description length is up to 158 characters. On mobile
-    devices, the max limit is about 120 characters.
 - type: file
   name: cover
   label: Cover image
@@ -63,4 +63,6 @@ fields:
     (grey)
 pages:
 - content/blog/nextjs-gatsby-ssg-ssr-et-csr.mdx
+- content/blog/nextjs-gatsby-ssg-ssr-et-csr.mdx
+- content/blog/principales-differences-entre-gatsby-et-nextjs.mdx
 - content/blog/principales-differences-entre-gatsby-et-nextjs.mdx
