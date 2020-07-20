@@ -31,15 +31,19 @@ fields:
   label: Category
   config:
     required: false
-  description: 'Example : Webdev<br><br>Will be displayed like so in mdx file :<br>category:
-    "Webdev"'
+  description: 'Examples : Webdev, Mobile Apps, Devops, Applications mobiles, Other,
+    Webperf, Static, UAV, Static websites, Data Visualisation<br><br>Will be displayed
+    like so in mdx file :<br>category: "Webdev"'
 - type: list
   name: tags
   label: Tags
   config:
     use_select: false
-  description: Will be displayed like so in mdx file <br>tags:<br>   - "Français"<br>  -
-    "JAMstack"<br>  - "Static"
+  description: 'Examples : Français, gatsby, react, Sites statiques, static, statique,
+    Web performance fr, Anafi, Drone, Photogrammétrie, Pix4D, Applications mobiles,
+    English, Static websites, Dashboard, Data Visualisation, Dataviz,<br><br>Will
+    be displayed like so in mdx file :<br>tags:<br> - "Français"<br> - "JAMstack"<br>
+    - "Static"'
 - type: text
   name: tldr
   label: TL;DR
@@ -55,7 +59,8 @@ fields:
   name: draft
   label: Draft
   default: true
-  description: Set to true if don't want to publish now. Else, set to false
+  description: Set to true (green) if don't want to publish now. Else, set to false
+    (grey)
 pages:
 - content/blog/nextjs-gatsby-ssg-ssr-et-csr.mdx
 - content/blog/principales-differences-entre-gatsby-et-nextjs.mdx
