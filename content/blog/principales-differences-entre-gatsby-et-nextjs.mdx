@@ -1,0 +1,26 @@
+---
+cover: "/uploads/single-pixel-transparent-png-image-default-placeholder.png"
+draft: false
+path: principales-differences-entre-gatsby-et-nextjs
+date: 2020-07-20
+title: Principales différences entre Gatsby et NextJS
+category: Static
+tags:
+- Static
+- Gatsby
+- NextJS
+- Français
+tldr: Pages générées quand au build avec Gatsby. NextJS génère une nouvelle page à
+  chaque requête. Gestion des données strict avec Gatsby. Plus libre mais demande
+  plus de travail avec NextJS.
+
+---
+**Gatsby** est un générateur de sites statiques. Il génère des pages HTML. Les pages sont générés au "build" le site. A chaque modification il faut re-builder toutes les pages. Pas besoin de serveur. Le coût d'hébergement est extrêmement réduit, voir gratuit. C'est plus rapide et très sécurisé.
+
+**NextJS** nécessite un serveur NodeJS. Il génère une nouvelle page à chaque requête. Pas besoin de re-builder à chaque fois. C'est plus comme un site Wordpress mais qui utilise du Javascript plutôt que du PHP pour générer les pages.
+
+**Gatsby** est assez stricte sur la manière de gérer les données de l'application. En contrepartie, beaucoup de plugins existent pour récupérer des données depuis différentes sources : fichiers texte, base de données Wordpress, ou CMS Headless.
+
+**NextJS** laisse le développeur géré les données. On est plus libre mais ça demande plus de travail.
+
+Pour un site sur lequel le contenu ne change pas extrêmement fréquemment et qui fait moins de 2000 pages, Gatsby est souvent plus adapté. Son riche écosystème  de thèmes et de plugins accélère le développement.
