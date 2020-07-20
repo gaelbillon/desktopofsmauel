@@ -22,7 +22,9 @@ fields:
   name: tldr
   label: TL;DR
   description: New Google's meta description length is up to 158 characters. On mobile
-    devices, the max limit is about 120 characters.
+    devices, the max limit is about 120 characters. <br>Prefer using quotes (") around
+    text. If not, be careful with quotes in TL:DR, special characters, etc. use (\)
+    to escape quotes inside TL;DR
 - type: datetime
   name: date
   label: Date
