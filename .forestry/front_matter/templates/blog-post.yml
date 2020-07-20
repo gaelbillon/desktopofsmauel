@@ -48,8 +48,9 @@ fields:
 - type: file
   name: cover
   label: Cover image
-  default: "/uploads/single-pixel-transparent-png-image-default-placeholder.png"
-  description: 'In mdx file : <br>cover: "./2020-05-21-at-11.57.57.png"'
+  default: "/images/forestry/default-image-1px-fff-0-transparent.png"
+  description: 'If left blank, a default 1px square transparent png will be added.<br>In
+    mdx file : <br>cover: "./2020-05-21-at-11.57.57.png"'
 - type: boolean
   name: draft
   label: Draft
