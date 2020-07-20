@@ -56,4 +56,5 @@ fields:
   default: true
   description: Set to true if don't want to publish now. Else, set to false
 pages:
+- content/blog/nextjs-gatsby-ssg-ssr-et-csr.mdx
 - content/blog/principales-differences-entre-gatsby-et-nextjs.mdx
