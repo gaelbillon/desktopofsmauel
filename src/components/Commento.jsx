@@ -37,7 +37,7 @@ const Commento = ({ id }) => {
     // In case our #commento container exists we can add our commento script
     if (document.getElementById('commento')) {
       insertScript(
-        "http://35.238.35.192:8080/js/commento.js",
+        "https://commento.gaelbillon.com/js/commento.js",
         "commento-script",
         document.body,
         "data-no-fonts",
