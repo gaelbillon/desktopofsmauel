@@ -49,7 +49,7 @@ const BlogPage = ({ data }) => {
 
   return (
     <Layout
-      title="Design Blog"
+      title="Blog"
       description="Hi! My name is Gaël. I write about web development, photogrammetry and drones."
       keywords="Webdev,Blog,Web,Mobile Apps,UI,UX, Drone, Photogrammetry"
     >
