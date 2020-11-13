@@ -5,7 +5,7 @@
 :root {
     --font-primary: /* canada-type-gibson, */ "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif;
     --font-secondary: /* Libre Caslon Text , Lato, */ "Book Antiqua", "Palatino", "Cambria", "Lucida Bright", "Times New Roman", Georgia, serif;
-    --font-tertiary: /* freight-big-pro, Lato, */ Georgia, serif;
+    --font-tertiary: /* freight-big-pro, Lato, */ Arial, "Helvetica Neue", Helvetica, sans-serif;
     --font-weight-bold: 600;
     --font-weight-regular: 400;
     --font-size-xxl: calc(56px + (72 - 56) * ((100vw - 320px) / (1600 - 320)));
