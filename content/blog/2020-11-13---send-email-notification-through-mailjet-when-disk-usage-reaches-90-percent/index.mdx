@@ -13,6 +13,7 @@ tags:
 ## Create a script file
 
 `cd ~`
+
 `nano check-disk-space-send-email-when-reach-90percent.sh`
 
 Copy this to file
@@ -84,6 +85,7 @@ user@vps1111:~$ ./check-disk-space-send-email-when-reach-90percent.sh
 Add cron job every 3 days
 
 `crontab -e`
+
 `0 */72 * * * /home/user/check-disk-space-send-email-when-reach-90percent.sh > /dev/null 2>&1`
 
 For testing cron, try first with a set time. For example, for it's 11:24 and you want to see if the job will be run next minute (at 11:25), use this : `25 11 * * *`
