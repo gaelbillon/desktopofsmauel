@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styled from "styled-components";
 
 const CommentoDiv = styled.div`
-  font-family: var(--font-primary) !important;
+  font-family: var(--font-tertiary) !important;
 `;
 
 // Helper to add scripts to our page
