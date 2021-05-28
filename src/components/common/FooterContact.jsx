@@ -57,15 +57,15 @@ const FooterContact = () => {
       <Container>
         <Section>
           <h5>Let's Chat</h5>
-          <Content>But another time, I'm not available at the moment.</Content>
-          {/*<Content>
+          {/* <Content>But another time, I'm not available at the moment.</Content> */}
+          <Content>
             I'm always happy to hear about new exciting projects. ↓ Do not
             hesitate to click on this link.
             <br />
             <Link to="mailto:&#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;+&#103;&#098;&#099;&#111;&#109;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
               &#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
             </Link>
-          </Content> */}
+          </Content>
         </Section>
         <Section>
           <h5>Keep In Touch</h5>

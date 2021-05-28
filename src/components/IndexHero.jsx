@@ -67,15 +67,15 @@ const IndexHero = () => {
           <small>Contact</small>
           <div>
             <Emoji symbol="📬" />{" "}
-            <span>Not available at the moment</span>
-            {/* <Link
+            {/* <span>Not available at the moment</span> */}
+            <Link
               to="mailto:&#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;+&#103;&#098;&#099;&#111;&#109;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
               target="_blank"
               aria-label="Email"
               rel="noopener"
             >
               &#103;&#097;&#101;&#108;&#046;&#098;&#105;&#108;&#108;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
-            </Link> */}
+            </Link>
           </div>
           <div>
             <Emoji symbol="🎤" />{" "}
