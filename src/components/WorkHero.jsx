@@ -86,8 +86,8 @@ class WorkHero extends React.Component {
             <ListItem style={{ borderLeftColor: `${post.color}` }}>
               <ListLeft>
                 <div>
-                  <h6>{post.title}</h6>
-                  <h3>{post.subtitle}</h3>
+                  <h3>{post.title}</h3>
+                  <h6>{post.subtitle}</h6>
                 </div>
                 <div style={{ display: "inline-block" }}>
                   <small>Read On</small>
