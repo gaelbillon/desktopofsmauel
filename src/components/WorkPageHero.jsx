@@ -39,8 +39,8 @@ const WorkPageHero = ({ data }) => {
     <Section className="full-bleed" color={data.color}>
       <section>
         <Boxed size="large">
-          <Subtitle>{data.title}</Subtitle>
-          <Title>{data.subtitle}</Title>
+          <Title>{data.title}</Title>
+          <Subtitle>{data.subtitle}</Subtitle>
           <Image fluid={data.cover.childImageSharp.fluid} alt={data.title} />
         </Boxed>
       </section>
