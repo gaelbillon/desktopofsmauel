@@ -20,11 +20,10 @@ const Subtitle = styled.h6`
   color: var(--color-white-500);
   font-weight: 400;
   letter-spacing: 1.5px;
-  margin: 0;
 `;
 
 const Title = styled.h3`
-  margin-top: 16px;
+  margin-top: 0;
   color: var(--color-white-500);
 `;
 
